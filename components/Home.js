@@ -1,14 +1,23 @@
-import styles from '../styles/Home.module.css';
+import Image from "next/image";
 
 function Home() {
   return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
-    </div>
+    <>
+      <div
+        style={{
+          position: "relative",
+          width: "100vw",
+          height: "100vh",
+        }}
+      >
+        <Image
+          src="/background.png"
+          alt="background-image"
+          layout="fill"
+          style={{ objectFit: "cover" }}
+        />
+      </div>
+    </>
   );
 }
 
