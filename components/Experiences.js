@@ -40,20 +40,19 @@ export default function Experiences() {
                   nouveaux éléments 🏗.
                 </p>
                 <br />
-                <p>
-                  📌 Missions réalisées :
-                  <ul>
-                    <li>
-                      ✅ - Refonte / redesign du site web de l'entreprise (pages
-                      index, abouteMe, contact).
-                    </li>
-                    <li>✅ - Ajout de nouveaux éléments.</li>
-                    <li>
-                      ✅ - Utilisation des MediaQueries pour avoir un site web
-                      responsive.
-                    </li>
-                  </ul>
-                </p>
+                <p>📌 Missions réalisées :</p>
+                <ul>
+                  <li>
+                    ✅ - Refonte / redesign du site web de l'entreprise (pages
+                    index, abouteMe, contact).
+                  </li>
+                  <li>✅ - Ajout de nouveaux éléments.</li>
+                  <li>
+                    ✅ - Utilisation des MediaQueries pour avoir un site web
+                    responsive.
+                  </li>
+                </ul>
+
                 <div className="flex mt-4">
                   <Image
                     src="/experiences/pp-minia.jpg"
@@ -99,13 +98,11 @@ export default function Experiences() {
                   interactives.
                 </p>
                 <br />
-                <p>
-                  📌 Missions confiées :
-                  <ul>
-                    <li>✅ - Suivi des tracks Javascript d'Openclassroom.</li>
-                    <li>✅ - Manipulation du DOM et des API Fetch 👨‍💻.</li>
-                  </ul>
-                </p>
+                <p>📌 Missions confiées :</p>
+                <ul>
+                  <li>✅ - Suivi des tracks Javascript d'Openclassroom.</li>
+                  <li>✅ - Manipulation du DOM et des API Fetch 👨‍💻.</li>
+                </ul>
               </div>
             </div>
           </div>
