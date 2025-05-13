@@ -17,10 +17,8 @@ export default function Home() {
       </Head>
 
       <div className="relative w-screen h-screen bg-gradient-to-b from-[#0a0a23] via-[#1a1a3f] to-[#2a2a5a]">
-        {/* Contenu centré */}
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-4xl w-full text-white">
-            {/* Texte */}
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-2xl md:text-4xl font-bold mb-4">
                 👨🏻‍💻 Développeur Full-Stack Web & Mobile 💻 📱
@@ -33,8 +31,6 @@ export default function Home() {
                 performantes.
               </p>
             </div>
-
-            {/* Portrait rond */}
             <div className="w-[200px] h-[200px] rounded-full overflow-hidden relative shadow-lg">
               <Image
                 src="/portrait.jpg"
@@ -50,10 +46,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Experiences />
-
-      <div className="z-20">
-        <ParticlesBackground />
-      </div>
+      <ParticlesBackground className="z-20" />
     </>
   );
 }
