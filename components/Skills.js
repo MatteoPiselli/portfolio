@@ -9,78 +9,64 @@ export default function Skills() {
           La stack technique avec laquelle je crée mes applications web & mobile
         </p>
         <div className="grid grid-cols-3 md:grid-cols-6 justify-center gap-12 mt-24">
-          <Image
-            src="/logos/reactjs.svg"
-            alt="logo-react"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/nextjs.png"
-            alt="logo-next"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/redux.svg"
-            alt="logo-redux"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/tailwind.svg"
-            alt="logo-tailwind"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/nodejs.svg"
-            alt="logo-node"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/express.png"
-            alt="logo-express"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/mongodb.png"
-            alt="logo-mongodb"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/expo.svg"
-            alt="logo-expo"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/github.svg"
-            alt="logo-github"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/bash.png"
-            alt="logo-bash"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/figma.png"
-            alt="logo-figma"
-            width={100}
-            height={100}
-          />
-          <Image
-            src="/logos/vscode.svg"
-            alt="logo-vscode"
-            width={100}
-            height={100}
-          />
+          {[
+            {
+              title: "Logo React",
+              image: "/logos/reactjs.svg",
+            },
+            {
+              title: "Logo Next.js",
+              image: "/logos/nextjs.png",
+            },
+            {
+              title: "Logo Redux Toolkit",
+              image: "/logos/redux.svg",
+            },
+            {
+              title: "Logo Tailwind CSS",
+              image: "/logos/tailwind.svg",
+            },
+            {
+              title: "Logo Node.js",
+              image: "/logos/nodejs.svg",
+            },
+            {
+              title: "Logo Express.js",
+              image: "/logos/express.png",
+            },
+            {
+              title: "Logo MongoDB",
+              image: "/logos/mongodb.png",
+            },
+            {
+              title: "Logo Expo",
+              image: "/logos/expo.svg",
+            },
+            {
+              title: "Logo GitHub",
+              image: "/logos/github.svg",
+            },
+            {
+              title: "Logo Bash",
+              image: "/logos/bash.png",
+            },
+            {
+              title: "Logo Figma",
+              image: "/logos/figma.png",
+            },
+            {
+              title: "Logo VS Code",
+              image: "/logos/vscode.svg",
+            },
+          ].map((skills, index) => (
+            <Image
+              key={index}
+              src={skills.image}
+              alt={skills.title}
+              width={100}
+              height={100}
+            />
+          ))}
         </div>
       </div>
     </div>
