@@ -19,8 +19,8 @@ export default function Experiences() {
                 <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
                 <div className="flex mb-2">
                   <Image
-                    src="/experiences/pp.png"
-                    alt="partenaires particuliers logo"
+                    src="/experiences/partenaires-particuliers.png"
+                    alt="partenaires-particuliers-logo"
                     width={56}
                     height={56}
                   />
@@ -55,7 +55,7 @@ export default function Experiences() {
 
                 <div className="flex mt-4">
                   <Image
-                    src="/experiences/pp-minia.jpg"
+                    src="/experiences/partenaires-particuliers-mini.jpg"
                     alt="partenaires-particuliers-miniature"
                     width={100}
                     height={56}
@@ -76,7 +76,7 @@ export default function Experiences() {
                 <div className="flex mb-2">
                   <Image
                     src="/experiences/transgourmet.png"
-                    alt="transgourmet france logo"
+                    alt="transgourmet-france-logo"
                     width={56}
                     height={56}
                   />
@@ -116,8 +116,8 @@ export default function Experiences() {
                 <h3 className="text-xl font-bold mb-4">Caissier</h3>
                 <div className="flex mb-2">
                   <Image
-                    src="/experiences/Grand_Frais_logo.png"
-                    alt="grand frais logo"
+                    src="/experiences/grand-frais.png"
+                    alt="grand-frais-logo"
                     width={56}
                     height={56}
                   />
@@ -140,8 +140,8 @@ export default function Experiences() {
                 </h3>
                 <div className="flex mb-2">
                   <Image
-                    src="/experiences/Intermarché_logo.png"
-                    alt="Intermarché logo"
+                    src="/experiences/intermarche.png"
+                    alt="intermarché-logo"
                     width={56}
                     height={56}
                   />
@@ -161,7 +161,7 @@ export default function Experiences() {
                 <div className="flex mb-2">
                   <Image
                     src="/experiences/entreprise.png"
-                    alt="entreprise logo"
+                    alt="entreprise-logo"
                     width={56}
                     height={56}
                   />
@@ -182,8 +182,8 @@ export default function Experiences() {
                 </h3>
                 <div className="flex mb-2">
                   <Image
-                    src="/experiences/Logo_Adéquat.png"
-                    alt="adéquat intérim logo"
+                    src="/experiences/adequat.png"
+                    alt="adéquat-intérim-logo"
                     width={56}
                     height={56}
                   />
