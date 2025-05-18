@@ -12,7 +12,7 @@ export default function Projects() {
       </div>
 
       {/* Projets */}
-      <div className="absolute z-10 flex flex-col items-center md:flex-row md:flex-wrap md:justify-center gap-8">
+      <div className="relative z-10 flex flex-col items-center md:flex-row md:flex-wrap md:justify-center gap-8">
         {[
           {
             title: "MyMoviz",

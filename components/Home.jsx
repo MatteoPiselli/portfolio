@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import ParticlesBackground from "../components/Particles";
+import ParticlesBackground from "./Particles";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Experiences from "./Experiences";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
@@ -46,7 +47,8 @@ export default function Home() {
       <Skills />
       <Projects />
       <Experiences />
-      <ParticlesBackground className="z-20" />
+      <Contact />
+      <ParticlesBackground />
     </>
   );
 }

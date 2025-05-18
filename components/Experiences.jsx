@@ -8,7 +8,7 @@ export default function Experiences() {
           Expériences Professionnelles
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-24">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-24">
           <div>
             <h2 className="text-2xl font-semibold mb-4 border-b border-white pb-2">
               Développement 💻
