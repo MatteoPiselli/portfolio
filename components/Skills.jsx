@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div className="relative w-screen h-screen bg-[#2a2a5a]">
+    <div className="relative w-full min-h-screen bg-[#2a2a5a]">
       <div className="relative z-10 inset-0 flex flex-col justify-center items-center text-white text-center">
         <h2 className="text-2xl md:text-4xl font-bold mb-8">Stack Technique</h2>
         <p className="text-lg text-gray-400">

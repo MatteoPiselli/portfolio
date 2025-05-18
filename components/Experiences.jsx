@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function Experiences() {
   return (
-    <div className="relative w-screen min-h-screen bg-[#2a2a5a] text-white">
-      <div className="max-w-7xl mx-auto pt-24 px-4">
+    <div className="relative w-full min-h-screen bg-[#2a2a5a] text-white">
+      <div className="relative z-10 max-w-7xl mx-auto pt-24 px-4">
         <h1 className="text-4xl font-bold text-center mb-12">
           Expériences Professionnelles
         </h1>
 
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-24">
           <div>
             <h2 className="text-2xl font-semibold mb-4 border-b border-white pb-2">
               Développement 💻
             </h2>
             <div className="space-y-4">
               {/* Partenaires Particuliers */}
-              <div className="bg-white/10 rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#40406b] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
                 <div className="flex mb-2">
                   <Image
@@ -71,7 +71,7 @@ export default function Experiences() {
               </div>
 
               {/* Transgourmet */}
-              <div className="bg-white/10 rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#40406b] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
                 <div className="flex mb-2">
                   <Image
@@ -112,7 +112,7 @@ export default function Experiences() {
               Jobs Étudiants - 2024 📚
             </h2>
             <div className="space-y-4">
-              <div className="bg-white/10 rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#40406b] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Caissier</h3>
                 <div className="flex mb-2">
                   <Image
@@ -134,7 +134,7 @@ export default function Experiences() {
                 </span>
               </div>
 
-              <div className="bg-white/10 rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#40406b] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">
                   Préparateur de commandes
                 </h3>
@@ -156,7 +156,7 @@ export default function Experiences() {
                 <span>✅ - Soft skills : Rigueur et organisation.</span>
               </div>
 
-              <div className="bg-white/10 rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#40406b] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Ouvrier agricole</h3>
                 <div className="flex mb-2">
                   <Image
@@ -176,7 +176,7 @@ export default function Experiences() {
                 <span>✅ - Soft skills : Esprit d'équipe et organisation</span>
               </div>
 
-              <div className="bg-white/10 rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#40406b] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">
                   Manutentionnaire chez Relais Colis
                 </h3>

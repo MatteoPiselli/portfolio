@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className="relative w-screen min-h-screen bg-[#2a2a5a] text-white py-16 px-4">
+    <div className="relative w-full min-h-screen bg-[#2a2a5a] text-white py-16 px-4">
       <div className="flex flex-col items-center mb-12">
         <h2 className="font-bold text-2xl md:text-4xl mb-8">Projets</h2>
         <p className="text-center text-lg text-gray-400 max-w-2xl">
@@ -52,7 +52,7 @@ export default function Projects() {
         ].map((project, index) => (
           <div
             key={index}
-            className="relative w-[90%] md:w-[25%] transform transition-transform duration-300 hover:scale-105 rounded-lg overflow-hidden"
+            className="relative w-[90%] md:w-[28%] transform transition-transform duration-300 hover:scale-105 rounded-lg overflow-hidden"
           >
             <Image
               src={project.image}

@@ -17,7 +17,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="relative w-screen h-screen bg-gradient-to-b from-[#0a0a23] via-[#1a1a3f] to-[#2a2a5a]">
+      <div className="relative w-full min-h-screen bg-gradient-to-b from-[#0a0a23] via-[#1a1a3f] to-[#2a2a5a]">
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-4xl w-full text-white">
             <div className="flex-1 text-center md:text-left">
