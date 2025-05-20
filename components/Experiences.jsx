@@ -4,9 +4,9 @@ export default function Experiences() {
   return (
     <div className="relative w-full min-h-screen bg-[#2a2a5a] text-white">
       <div className="relative z-10 max-w-7xl mx-auto pt-24 px-4">
-        <h1 className="text-4xl font-bold text-center mb-12">
+        <h2 id="experiences" className="text-4xl font-bold text-center mb-12">
           Expériences Professionnelles
-        </h1>
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-24">
           <div>

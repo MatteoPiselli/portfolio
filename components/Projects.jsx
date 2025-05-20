@@ -4,7 +4,9 @@ export default function Projects() {
   return (
     <div className="relative w-full min-h-screen bg-[#2a2a5a] text-white py-16 px-4">
       <div className="flex flex-col items-center mb-12">
-        <h2 className="font-bold text-2xl md:text-4xl mb-8">Projets</h2>
+        <h2 id="projects" className="font-bold text-2xl md:text-4xl mb-8">
+          Projets
+        </h2>
         <p className="text-center text-lg text-gray-400 max-w-2xl">
           Voici un aperçu de mes projets personnels ainsi que ceux réalisés
           pendant ma formation.

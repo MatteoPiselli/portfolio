@@ -1,12 +1,16 @@
+// Next
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+// Components
 import ParticlesBackground from "./Particles";
 import NavBar from "./NavBar";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Experiences from "./Experiences";
 import Contact from "./Contact";
+// Icons
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -21,9 +25,21 @@ export default function Home() {
 
       {/* ------------Background----------- */}
       <div className="relative w-full min-h-screen bg-gradient-to-b from-[#0a0a23] via-[#1a1a3f] to-[#2a2a5a]">
-        <div className="mt-12">
+        {/* --------- Navigation ---------- */}
+        <div className="flex justify-center items-center mt-12">
           <NavBar />
+          <div className="absolute right-16 z-20">
+            <div className="flex space-x-4">
+              <Link href="https://github.com/MatteoPiselli">
+                <FaGithub className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer" />
+              </Link>
+              <Link href="https://www.linkedin.com/in/matteo-piselli/">
+                <FaLinkedin className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer" />
+              </Link>
+            </div>
+          </div>
         </div>
+
         {/* -------------About me------------ */}
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-white">
