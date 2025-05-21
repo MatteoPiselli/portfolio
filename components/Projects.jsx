@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className="relative w-full min-h-screen bg-[#2a2a5a] text-white py-16 px-4">
+    <div className="relative w-full min-h-screen bg-[#232526] text-white py-16 px-4">
       <div className="flex flex-col items-center mb-12">
         <h2 id="projects" className="font-bold text-2xl md:text-4xl mb-8">
           Projets
