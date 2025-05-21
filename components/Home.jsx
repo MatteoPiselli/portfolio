@@ -9,6 +9,8 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Experiences from "./Experiences";
 import Contact from "./Contact";
+import ScrollToTop from "./ScrollToTop";
+import Footer from "./Footer";
 // Icons
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -24,7 +26,7 @@ export default function Home() {
       </Head>
 
       {/* ------------Background----------- */}
-      <div className="relative w-full min-h-screen bg-gradient-to-b from-[#0a0a23] via-[#1a1a3f] to-[#2a2a5a]">
+      <div className="relative w-full min-h-screen bg-gradient-to-b from-[#000] via-[#000] to-[#232526]">
         {/* --------- Navigation ---------- */}
         <div className="flex justify-center items-center mt-12">
           <NavBar />
@@ -73,6 +75,12 @@ export default function Home() {
       <Projects />
       <Experiences />
       <Contact />
+      <ScrollToTop />
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Particles background */}
       <ParticlesBackground />
     </>
   );
