@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#1a1a3f] text-white w-full md:w-[50%] mx-auto rounded-full shadow-md z-20">
+    <nav className="bg-[#18181b]/90 text-white w-full md:w-[50%] mx-auto rounded-full shadow-md z-20">
       <div className="flex items-center justify-between w-[100%] mx-auto px-4 md:px-8 py-4">
         <div className="text-xl font-bold tracking-wide">Matteo Piselli</div>
 
