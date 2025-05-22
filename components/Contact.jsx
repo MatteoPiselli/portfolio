@@ -93,6 +93,7 @@ export default function Contact() {
         projet.
       </p>
 
+      {/* ------------ Affichage du message de succès ou du formulaire ------------- */}
       {state.succeeded ? (
         <div className="bg-green-600 text-white p-6 rounded-xl text-center shadow-xl animate-fade-in">
           <h3 className="text-2xl font-bold mb-2">
