@@ -95,7 +95,7 @@ export default function Contact() {
 
       {/* ------------ Affichage du message de succès ou du formulaire ------------- */}
       {state.succeeded ? (
-        <div className="bg-green-600 text-white p-6 rounded-xl text-center shadow-xl animate-fade-in">
+        <div className="bg-green-600 z-10 text-white p-6 rounded-xl text-center shadow-xl animate-fade-in">
           <h3 className="text-2xl font-bold mb-2">
             Merci pour votre message !
           </h3>
@@ -104,7 +104,7 @@ export default function Contact() {
       ) : (
         <form
           onSubmit={onSubmit}
-          className="w-full max-w-xl space-y-6 animate-fade-in"
+          className="w-full z-10 max-w-xl space-y-6 animate-fade-in"
         >
           <div>
             <label htmlFor="name" className="block mb-2 text-sm font-medium">
