@@ -26,10 +26,14 @@ export default function Footer() {
         {/* Liens de réseaux sociaux */}
         <div className="flex space-x-6">
           <Link href="https://github.com/MatteoPiselli">
-            <FaGithub className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer" />
+            <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+              <FaGithub />
+            </span>
           </Link>
-          <Link href="https://linkedin.com/in/matteo-piselli">
-            <FaLinkedin className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer" />
+          <Link href="https://www.linkedin.com/in/matteo-piselli/">
+            <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+              <FaLinkedin />
+            </span>
           </Link>
         </div>
 
