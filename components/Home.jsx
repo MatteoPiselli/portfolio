@@ -79,7 +79,7 @@ export default function Home() {
       <Projects />
       <Experiences />
       <Contact />
-      <ScrollToTop />
+      <ScrollToTop className="hidden md:block" />
 
       {/* Footer */}
       <Footer />
