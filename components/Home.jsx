@@ -30,7 +30,7 @@ export default function Home() {
         {/* --------- Navigation ---------- */}
         <div className="flex justify-center items-center mt-12">
           <NavBar />
-          <div className="absolute right-16 z-20">
+          <div className="absolute right-20 z-20">
             <div className="flex space-x-4">
               <Link href="https://github.com/MatteoPiselli">
                 <FaGithub className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer" />
