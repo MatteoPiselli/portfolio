@@ -1,30 +1,48 @@
 import { useState } from "react";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#18181b]/90 text-white w-full md:w-[50%] mx-auto rounded-full shadow-md z-20">
+    <nav
+      className={`bg-[#18181b] text-white w-[90%] md:w-[50%] mx-auto shadow-md z-20 
+      ${isOpen ? "rounded-t-2xl" : "rounded-full"}`} // si le menu mobile est ouvert arrondie seulement le haut
+    >
       <div className="flex items-center justify-between w-[100%] mx-auto px-4 md:px-8 py-4">
         <div className="text-xl font-bold tracking-wide">Matteo Piselli</div>
 
         {/* Menu desktop */}
         <ul className="hidden md:flex space-x-8 text-md font-light z-20">
           <li>
-            <Link href="#skills" className="text-white hover:text-[#A1A1A1]">
-              Stack Tech
+            <Link href="#skills" scroll={true}>
+              <span className="cursor-pointer text-white hover:text-[#A1A1A1]">
+                Stack Tech
+              </span>
             </Link>
           </li>
           <li>
-            <Link href="#projects">Projets</Link>
+            <Link href="#projects" scroll={true}>
+              <span className="cursor-pointer text-white hover:text-[#A1A1A1]">
+                Projets
+              </span>
+            </Link>
           </li>
           <li>
-            <Link href="#experiences">Expériences</Link>
+            <Link href="#experiences" scroll={true}>
+              <span className="cursor-pointer text-white hover:text-[#A1A1A1]">
+                Expériences
+              </span>
+            </Link>
           </li>
           <li>
-            <Link href="#contact">Contact</Link>
+            <Link href="#contact" scroll={true}>
+              <span className="cursor-pointer text-white hover:text-[#A1A1A1]">
+                Contact
+              </span>
+            </Link>
           </li>
         </ul>
 
@@ -38,32 +56,65 @@ export default function Navbar() {
       </div>
 
       {/* Menu mobile (visible quand ouvert) */}
-      {isOpen && (
-        <div className="md:hidden px-6 pb-4">
-          <ul className="flex flex-col space-y-3 text-md font-light">
-            <li>
-              <Link href="#skills" onClick={() => setIsOpen(false)}>
-                Compétences
-              </Link>
-            </li>
-            <li>
-              <Link href="#projects" onClick={() => setIsOpen(false)}>
-                Projets
-              </Link>
-            </li>
-            <li>
-              <Link href="#experiences" onClick={() => setIsOpen(false)}>
-                Expériences
-              </Link>
-            </li>
-            <li>
-              <Link href="#contact" onClick={() => setIsOpen(false)}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <div className="relative w-full">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="md:hidden absolute w-full bg-[#18181b] rounded-b-2xl shadow-md z-10"
+                style={{ marginTop: "-1px" }} // pour coller parfaitement à la navbar
+              >
+                <ul className="flex flex-col ml-4 space-y-3 mb-2 text-md font-light">
+                  <li>
+                    <Link href="#skills" scroll={true}>
+                      <span
+                        onClick={() => setIsOpen(false)}
+                        className="text-white hover:text-[#A1A1A1]"
+                      >
+                        Stack Tech
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#projects" scroll={true}>
+                      <span
+                        onClick={() => setIsOpen(false)}
+                        className="text-white hover:text-[#A1A1A1]"
+                      >
+                        Projets
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#experiences" scroll={true}>
+                      <span
+                        onClick={() => setIsOpen(false)}
+                        className="text-white hover:text-[#A1A1A1]"
+                      >
+                        Expériences
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#contact" scroll={true}>
+                      <span
+                        onClick={() => setIsOpen(false)}
+                        className="text-white hover:text-[#A1A1A1]"
+                      >
+                        Contact
+                      </span>
+                    </Link>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
+          </>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
