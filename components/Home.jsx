@@ -33,10 +33,14 @@ export default function Home() {
           <div className="absolute right-20 z-20">
             <div className="flex space-x-4">
               <Link href="https://github.com/MatteoPiselli">
-                <FaGithub className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer" />
+                <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+                  <FaGithub />
+                </span>
               </Link>
               <Link href="https://www.linkedin.com/in/matteo-piselli/">
-                <FaLinkedin className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer" />
+                <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+                  <FaLinkedin />
+                </span>
               </Link>
             </div>
           </div>
