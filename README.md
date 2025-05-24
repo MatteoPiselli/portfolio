@@ -1,33 +1,39 @@
 # Portfolio – Matteo Piselli
 
-Bienvenue sur le portfolio de **Matteo Piselli**, développeur Full-Stack Web & Mobile.
+Bienvenue sur mon portfolio !
 
-## Aperçu
+## 🚀 Aperçu
 
-Ce projet présente mon parcours, mes compétences, mes projets et mes expériences professionnelles à travers une interface moderne et responsive.
+Ce projet met en avant mes compétences, mes projets et mes expériences professionnelles via une interface moderne, responsive et animée.
 
-## Fonctionnalités
+## ✨ Fonctionnalités principales
 
-- **Présentation** : Section "À propos" avec photo de profil.
-- **Stack technique** : Liste des compétences principales.
-- **Projets** : Galerie de projets réalisés.
-- **Expériences** : Parcours professionnel.
-- **Contact** : Formulaire de contact validé côté client et connecté à Formspree.
-- **Navigation responsive** : Menu burger animé sur mobile.
-- **Scroll to Top** : Bouton pour remonter en haut de la page (affiché uniquement sur desktop).
-- **Effets visuels** : Fond animé avec particules.
+- **Présentation** : Section "À propos" avec photo et description.
+- **Stack technique** : Compétences triées par catégories (Frontend, Backend, Mobile, Design…).
+- **Projets** : Cartes interactives avec liens vers les dépôts GitHub et les sites déployés, détails accessibles via pop-up.
+- **Expériences** : Mes expériences professionnelles.
+- **Contact** : Formulaire connecté à Formspree.
+- **Navigation responsive** : Menu burger animé (visible uniquement sur mobile).
+- **Scroll to Top** : Bouton pour remonter en haut de la page (visible uniquement sur desktop).
+- **Effets visuels** : Fond animé (particules).
 
-## Technologies utilisées
+## 🛠️ Technologies utilisées
 
-- **React / Next.js**
-- **Tailwind CSS** pour le style
-- **Framer Motion** pour les animations
-- **Lucide React** et **React Icons** pour les icônes
-- **Formspree** pour la gestion du formulaire de contact
+- **Next.js** (React)
+- **Tailwind CSS** (design & responsive)
+- **Framer Motion** (animations)
+- **React Icons** & **Lucide React** (icônes)
+- **Formspree** (formulaire de contact)
 
-## Déploiement
+## 🗂️ Structure du projet
 
-Ce projet peut être déployé facilement sur Vercel, Netlify ou toute plateforme compatible Next.js.
+- `components/` : Composants React (NavBar, Home, Skills, Projects, Experiences, Contact, Footer, ScrollToTop, etc.)
+- `public/` : Images et ressources statiques
+- `pages/` : Entrée Next.js
+
+## 📦 Déploiement
+
+Déployer sur Vercel.
 
 ---
 
