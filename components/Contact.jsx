@@ -117,7 +117,7 @@ export default function Contact() {
               required
               value={form.name}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-3 rounded-lg bg-[#222222] border border-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#484848]"
               placeholder="Votre nom"
             />
             {errors.name && (
@@ -136,7 +136,7 @@ export default function Contact() {
               required
               value={form.email}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-3 rounded-lg bg-[#222222] border border-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#484848]"
               placeholder="votre@email.com"
             />
             {errors.email && (
@@ -160,7 +160,7 @@ export default function Contact() {
               required
               value={form.message}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-3 rounded-lg bg-[#222222] border border-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#484848]"
               placeholder="Votre message..."
             ></textarea>
             {errors.message && (
@@ -179,7 +179,7 @@ export default function Contact() {
             className={`w-full bg-white text-black font-semibold py-3 px-6 rounded-xl transition ${
               state.submitting
                 ? "opacity-50 cursor-not-allowed"
-                : "hover:bg-gray-200"
+                : "hover:bg-[#7B7B7B]"
             }`}
           >
             {state.submitting ? "Envoi en cours..." : "Envoyer"}
