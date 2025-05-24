@@ -39,9 +39,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center mt-4 md:mt-0">
-          <p>
-            © {new Date().getFullYear()} Matteo PISELLI. Tous droits réservés.
-          </p>
+          <p>© {new Date().getFullYear()} Matteo PISELLI.</p>
         </div>
       </div>
     </footer>
