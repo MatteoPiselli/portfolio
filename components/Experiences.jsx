@@ -8,16 +8,16 @@ export default function Experiences() {
           Expériences Professionnelles
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-24">
+        <div className="max-w-2xl mx-auto mt-24">
           <div>
             <h2 className="text-2xl font-semibold mb-4 border-b border-white pb-2">
               Développement 💻
             </h2>
             <div className="space-y-4">
               {/* Partenaires Particuliers */}
-              <div className="bg-[#414345] rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#191919] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
-                <div className="flex mb-2">
+                <div className="flex items-center mb-4 space-x-4">
                   <Image
                     src="/experiences/partenaires-particuliers.png"
                     alt="partenaires-particuliers-logo"
@@ -42,16 +42,17 @@ export default function Experiences() {
                 <br />
                 <p>📌 Missions réalisées :</p>
                 <ul>
-                  <li>
-                    ✅ - Refonte / redesign du site web de l'entreprise (pages
-                    index, abouteMe, contact).
-                  </li>
+                  <li>✅ - Refonte / redesign du site web de l'entreprise.</li>
                   <li>✅ - Ajout de nouveaux éléments.</li>
                   <li>
                     ✅ - Utilisation des MediaQueries pour avoir un site web
                     responsive.
                   </li>
                 </ul>
+                <br />
+                <span>
+                  <u>Stack</u> : HTML, CSS, Javascript.
+                </span>
 
                 <div className="flex mt-4">
                   <Image
@@ -62,8 +63,10 @@ export default function Experiences() {
                     className="rounded-lg"
                   />
                   <a
-                    className="flex items-center ml-4 italic hover:opacity-50 hover:scale-[1.1]"
+                    className="flex items-center ml-4 italic hover:opacity-50 hover:scale-[1.1] transition-all"
                     href="https://www.partenaires-particuliers.fr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Partenaires Particuliers
                   </a>
@@ -71,9 +74,9 @@ export default function Experiences() {
               </div>
 
               {/* Transgourmet */}
-              <div className="bg-[#414345] rounded-2xl p-4 shadow-lg">
+              <div className="bg-[#191919] rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
-                <div className="flex mb-2">
+                <div className="flex items-center mb-4 space-x-4">
                   <Image
                     src="/experiences/transgourmet.png"
                     alt="transgourmet-france-logo"
@@ -101,103 +104,8 @@ export default function Experiences() {
                 <p>📌 Missions confiées :</p>
                 <ul>
                   <li>✅ - Suivi des tracks Javascript d'Openclassroom.</li>
-                  <li>✅ - Manipulation du DOM et des API Fetch 👨‍💻.</li>
+                  <li>✅ - Manipulation du DOM et des API.</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 border-b border-white pb-2">
-              Jobs Étudiants - 2024 📚
-            </h2>
-            <div className="space-y-4">
-              <div className="bg-[#414345] rounded-2xl p-4 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Caissier</h3>
-                <div className="flex mb-2">
-                  <Image
-                    src="/experiences/grand-frais.png"
-                    alt="grand-frais-logo"
-                    width={56}
-                    height={56}
-                  />
-                  <div className="flex flex-col">
-                    <span>Grand Frais - CDD</span>
-                    <span className="text-gray-400 text-sm">
-                      La Queue-en-Brie
-                    </span>
-                  </div>
-                </div>
-                <br />
-                <span>
-                  ✅ - Soft skills : Relation clients et sens du service.
-                </span>
-              </div>
-
-              <div className="bg-[#414345] rounded-2xl p-4 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">
-                  Préparateur de commandes
-                </h3>
-                <div className="flex mb-2">
-                  <Image
-                    src="/experiences/intermarche.png"
-                    alt="intermarché-logo"
-                    width={56}
-                    height={56}
-                  />
-                  <div className="flex flex-col">
-                    <span>Intermarché - CDD</span>
-                    <span className="text-gray-400 text-sm">
-                      Loriol-sur-Drôme
-                    </span>
-                  </div>
-                </div>
-                <br />
-                <span>✅ - Soft skills : Rigueur et organisation.</span>
-              </div>
-
-              <div className="bg-[#414345] rounded-2xl p-4 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Ouvrier agricole</h3>
-                <div className="flex mb-2">
-                  <Image
-                    src="/experiences/entreprise.png"
-                    alt="entreprise-logo"
-                    width={56}
-                    height={56}
-                  />
-                  <div className="flex flex-col">
-                    <span>Les Vergers d'Ici - CDD</span>
-                    <span className="text-gray-400 text-sm">
-                      Livron-sur-Drôme
-                    </span>
-                  </div>
-                </div>
-                <br />
-                <span>✅ - Soft skills : Esprit d'équipe et organisation</span>
-              </div>
-
-              <div className="bg-[#414345] rounded-2xl p-4 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">
-                  Manutentionnaire chez Relais Colis
-                </h3>
-                <div className="flex mb-2">
-                  <Image
-                    src="/experiences/adequat.png"
-                    alt="adéquat-intérim-logo"
-                    width={56}
-                    height={56}
-                  />
-                  <div className="flex flex-col">
-                    <span>Adéquat Intérim & Recrutement - Intérim</span>
-                    <span className="text-gray-400 text-sm">
-                      Combs-la-Ville
-                    </span>
-                  </div>
-                </div>
-                <br />
-                <span>
-                  ✅ - Soft skills : Esprit d'équipe, rigueur et précision
-                </span>
               </div>
             </div>
           </div>
