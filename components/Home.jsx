@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Matteo Piselli - Portfolio</title>
+        <title>Matteo PISELLI - Portfolio</title>
         <meta
           name="description"
           content="Bienvenue sur mon portfolio ! Vous y découvrirez de nombreuses informations telles que mon parcours, mes projets et mes expériences."
@@ -33,12 +33,12 @@ export default function Home() {
           <div className="absolute right-20 z-20">
             <div className="flex space-x-4">
               <Link href="https://github.com/MatteoPiselli">
-                <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+                <span className="text-[#EEEEEE] hover:text-[#A1A1A1] text-2xl cursor-pointer">
                   <FaGithub />
                 </span>
               </Link>
               <Link href="https://www.linkedin.com/in/matteo-piselli/">
-                <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+                <span className="text-[#EEEEEE] hover:text-[#A1A1A1] text-2xl cursor-pointer">
                   <FaLinkedin />
                 </span>
               </Link>
@@ -48,13 +48,13 @@ export default function Home() {
 
         {/* -------------About me------------ */}
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
-          <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-white">
+          <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-[#EEEEEE]">
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-2xl md:text-4xl font-bold mb-4">
-                👨🏻‍💻 Développeur Full-Stack Web & Mobile 💻 📱
+              <h1 className="text-2xl md:text-3xl font-bold mb-4">
+                Développeur Full-Stack Web & Mobile 💻 📱
               </h1>
               <p className="text-lg font-light">
-                👋 Salut, moi c’est Matteo Piselli - Développeur Full-Stack Web
+                👋 Salut, moi c’est Matteo PISELLI - Développeur Full-Stack Web
                 & Mobile Js.
                 <br />
                 Je crée des applications web et mobiles modernes et
