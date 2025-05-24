@@ -1,71 +1,75 @@
-import Image from "next/image";
+import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiRedux,
+  SiExpress,
+  SiMongodb,
+  SiExpo,
+  SiFigma,
+  SiVercel,
+} from "react-icons/si";
+
+const skillsData = {
+  Design: [
+    { name: "Figma", icon: <SiFigma className="text-[#EEEEEE]" /> },
+    {
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss className="text-[#EEEEEE]" />,
+    },
+  ],
+  "Front-end": [
+    { name: "React", icon: <FaReact className="text-[#EEEEEE]" /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-[#EEEEEE]" /> },
+    { name: "Redux Toolkit", icon: <SiRedux className="text-[#EEEEEE]" /> },
+  ],
+  "Back-end": [
+    { name: "Node.js", icon: <FaNodeJs className="text-[#EEEEEE]" /> },
+    { name: "Express.js", icon: <SiExpress className="text-[#EEEEEE]" /> },
+    { name: "MongoDB", icon: <SiMongodb className="text-[#EEEEEE]" /> },
+  ],
+  Mobile: [
+    {
+      name: "React Native",
+      icon: <FaReact className="text-[#EEEEEE]" />,
+    },
+    {
+      name: "Expo",
+      icon: <SiExpo className="text-[#232526] bg-[#EEEEEE] rounded-full p-2" />,
+    },
+  ],
+  Autres: [
+    { name: "Git & GitHub", icon: <FaGithub className="text-[#EEEEEE]" /> },
+    { name: "Vercel", icon: <SiVercel className="text-[#EEEEEE]" /> },
+  ],
+};
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative w-full min-h-screen bg-[#232526]">
-      <div className="relative z-10 inset-0 flex flex-col justify-center items-center text-white text-center">
+    <section
+      id="skills"
+      className="flex items-center justify-center w-full min-h-screen bg-[#232526]"
+    >
+      <div className="relative z-10 inset-0 flex flex-col justify-center items-center text-[#EEEEEE]">
         <h2 className="text-2xl md:text-4xl font-bold mb-8">Stack Technique</h2>
-        <p className="text-lg text-gray-400">
+        <p className="text-lg text-center text-[#B4B4B4]">
           La stack technique avec laquelle je crée mes applications web & mobile
         </p>
-        <div className="grid grid-cols-3 md:grid-cols-6 justify-center gap-12 mt-24">
-          {[
-            {
-              title: "Logo React",
-              image: "/logos/reactjs.svg",
-            },
-            {
-              title: "Logo Next.js",
-              image: "/logos/nextjs.png",
-            },
-            {
-              title: "Logo Tailwind CSS",
-              image: "/logos/tailwind.svg",
-            },
-            {
-              title: "Logo Redux Toolkit",
-              image: "/logos/redux.svg",
-            },
-            {
-              title: "Logo Node.js",
-              image: "/logos/nodejs.svg",
-            },
-            {
-              title: "Logo Express.js",
-              image: "/logos/express.png",
-            },
-            {
-              title: "Logo MongoDB",
-              image: "/logos/mongodb.png",
-            },
-            {
-              title: "Logo Expo",
-              image: "/logos/expo.svg",
-            },
-            {
-              title: "Logo GitHub",
-              image: "/logos/github.svg",
-            },
-            {
-              title: "Logo Bash",
-              image: "/logos/bash.png",
-            },
-            {
-              title: "Logo Figma",
-              image: "/logos/figma.png",
-            },
-            {
-              title: "Logo VS Code",
-              image: "/logos/vscode.svg",
-            },
-          ].map((skills, index) => (
-            <Image
-              key={index}
-              src={skills.image}
-              alt={skills.title}
-              width={100}
-              height={100}
-            />
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-16 mt-24 w-full max-w-5xl">
+          {Object.entries(skillsData).map(([category, skills]) => (
+            <div key={category} className="flex flex-col items-center">
+              <h3 className="font-bold text-xl text-[#EEEEEE] mb-8">
+                {category}
+              </h3>
+              <div className="flex flex-col gap-8 text-[#B4B4B4] text-4xl">
+                {skills.map(({ name, icon }) => (
+                  <div key={name} className="flex items-center gap-4">
+                    {icon}
+                    <span className="text-base mt-1">{name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
