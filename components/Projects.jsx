@@ -212,21 +212,25 @@ export default function Projects() {
             />
 
             {/* ----------- Description du projet scrollable---------------*/}
-            <div className="mt-2">
-              {/* ------ Developpeurs ------*/}
-              <u>Développeurs</u> :
-              {projects[selected].developpeurs.map((dev) => (
-                <a
-                  key={dev.name}
-                  href={dev.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#0A66C2] hover:underline font-medium m-2 gap-1"
-                >
-                  {dev.name}
-                </a>
-              ))}
-            </div>
+
+            {/* ------ Developpeurs ------*/}
+            {projects[selected].developpeurs && (
+              <div className="mt-2">
+                <u>Développeurs</u> :
+                {projects[selected].developpeurs.map((dev) => (
+                  <a
+                    key={dev.name}
+                    href={dev.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#0A66C2] hover:underline font-medium m-2 gap-1"
+                  >
+                    {dev.name}
+                  </a>
+                ))}
+              </div>
+            )}
+
             {/* ------ Paragraphe ------*/}
             <div className="mb-4 overflow-y-auto max-h-[40vh] scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin pr-2">
               {projects[selected].details.map((paragraph, index) => (
