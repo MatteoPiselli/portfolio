@@ -210,7 +210,7 @@ export default function Projects() {
               height={350}
               className="object-cover bg-[#313131] rounded-lg"
             />
-
+            <p></p>
             {/* ----------- Description du projet scrollable---------------*/}
 
             {/* ------ Developpeurs ------*/}
