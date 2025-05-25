@@ -61,6 +61,7 @@ const projects = [
     repo: "https://github.com/MatteoPiselli/riot-api",
     url: null,
     details: [
+      "En cours de développement...",
       "Projet de recherche de joueurs basé sur l'API League of Legends, inspiré d'OP.GG.",
     ],
     stacks: ["React", "Node.js", "Express.js", "API Riot Games"],
