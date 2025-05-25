@@ -50,7 +50,8 @@ const projects = [
     repo: "https://github.com/MatteoPiselli/portfolio",
     url: "https://portfolio-matteo-pisellis-projects.vercel.app/",
     details: [
-      "Mon portfolio actuel, entièrement refait. Ce projet met en avant mes compétences, mes projets et mes expériences professionnelles via une interface moderne, responsive et animée.",
+      "Mon portfolio actuel, entièrement refait.",
+      "Ce projet met en avant mes compétences, mes projets et mes expériences professionnelles via une interface moderne, responsive et animée.",
     ],
     stacks: ["Next.js", "Tailwind CSS", "Framer Motion"],
     date: "2025",
