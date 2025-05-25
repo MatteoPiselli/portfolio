@@ -41,6 +41,10 @@ const skillsData = {
   Autres: [
     { name: "Git & GitHub", icon: <FaGithub className="text-[#EEEEEE]" /> },
     { name: "Vercel", icon: <SiVercel className="text-[#EEEEEE]" /> },
+    {
+      name: "Expo Go",
+      icon: <SiExpo className="text-[#232526] bg-[#EEEEEE] rounded-full p-2" />,
+    },
   ],
 };
 
