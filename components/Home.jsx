@@ -30,18 +30,27 @@ export default function Home() {
         {/* --------- Navigation ---------- */}
         <div className="flex justify-center items-center mt-12">
           <NavBar />
+          {/* ----------- Social Media Icons ------------*/}
           <div className="absolute right-20 z-20">
             <div className="flex space-x-4">
-              <Link href="https://github.com/MatteoPiselli">
+              <a
+                href="https://github.com/MatteoPiselli"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-[#EEEEEE] hover:text-[#A1A1A1] text-2xl cursor-pointer">
                   <FaGithub />
                 </span>
-              </Link>
-              <Link href="https://www.linkedin.com/in/matteo-piselli/">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/matteo-piselli/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-[#EEEEEE] hover:text-[#A1A1A1] text-2xl cursor-pointer">
                   <FaLinkedin />
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
