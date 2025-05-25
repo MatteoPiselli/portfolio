@@ -46,7 +46,7 @@ const projects = [
   },
   {
     title: "Portfolio v2",
-    image: "/projets/riot-api.png",
+    image: "/projets/portfolio-v2.png",
     repo: "https://github.com/MatteoPiselli/portfolio",
     url: "https://portfolio-matteo-pisellis-projects.vercel.app/",
     details: [
@@ -57,7 +57,7 @@ const projects = [
   },
   {
     title: "Riot API",
-    image: "/projets/portfolio-v2.png",
+    image: "/projets/riot-api.png",
     repo: "https://github.com/MatteoPiselli/riot-api",
     url: null,
     details: [
