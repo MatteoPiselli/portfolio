@@ -4,12 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 body {
   padding: 0;
   margin: 0;
   font-family: 'B612 Mono', monospace;
-  background-color: #000;
+  background-color: var(--bg-body);
 }
 
 h1,
@@ -45,4 +44,85 @@ html {
 
 .animate-fade-in {
   animation: fade-in 0.6s ease-out both;
+}
+
+/*-------- Mode clair -------*/
+:root {
+  --bg-body: #fff;
+  --bg-gradient-from: #fff;
+  --bg-gradient-via: #fff;
+  --bg-gradient-to: #f5f5f5;
+  --text-main: #202020;
+  --text-secondary: #646464;
+  --text-link: #202020;
+  --text-link-hover: #A1A1A1;
+  --nav-bg: #F0F0F0;
+  --card-bg: #F9F9F9;
+  --card-shadow: #e0e0e0;
+  --icon: #202020;
+  --icon-hover: #E8E8E8;
+  --btn-color: #202020;
+}
+
+/*-------- Mode sombre -------*/
+[data-theme="dark"] {
+  --bg-body: #000;
+  --bg-gradient-from: #000;
+  --bg-gradient-via: #000;
+  --bg-gradient-to: #232526;
+  --text-main: #EEEEEE;
+  --text-secondary: #B4B4B4;
+  --text-link: #EEEEEE;
+  --text-link-hover: #A1A1A1;
+  --nav-bg: #222222;
+  --card-bg: #191919;
+  --card-shadow: #111;
+  --icon: #EEEEEE;
+  --icon-hover: #A1A1A1;
+  --btn-color: #EEEEEE;
+}
+
+/* Utilisation des variables dans les classes Tailwind personnalisées */
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--bg-gradient-from), var(--bg-gradient-via), var(--bg-gradient-to));
+}
+
+.text-main {
+  color: var(--text-main);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-link {
+  color: var(--text-link);
+}
+
+.text-link:hover {
+  color: var(--text-link-hover);
+}
+
+.bg-nav {
+  background-color: var(--nav-bg);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 24px 0 var(--card-shadow);
+}
+
+.icon {
+  color: var(--icon);
+}
+
+.icon:hover {
+  color: var(--icon-hover);
+}
+
+.btn-color {
+  color: var(--btn-color);
 }
