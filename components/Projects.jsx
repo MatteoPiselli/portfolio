@@ -234,7 +234,7 @@ export default function Projects() {
             )}
 
             {/* ------ Paragraphe ------*/}
-            <div className="mb-4 overflow-y-auto max-h-[40vh] scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin pr-2">
+            <div className="mt-4 mb-4 overflow-y-auto max-h-[40vh] scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin pr-2">
               {projects[selected].details.map((paragraph, index) => (
                 <p key={index} className="mt-4 mb-4 ">
                   {paragraph}
