@@ -23,7 +23,6 @@ export default function Home() {
           name="description"
           content="Bienvenue sur mon portfolio ! Vous y découvrirez de nombreuses informations telles que mon parcours, mes projets et mes expériences."
         />
-        <meta name="robots" content="index, follow" />
       </Head>
 
       {/* ------------Background----------- */}
