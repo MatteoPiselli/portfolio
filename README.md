@@ -1,39 +1,39 @@
 # Portfolio – Matteo Piselli
 
-Bienvenue sur mon portfolio !
+Welcome to my portfolio !
 
-## 🚀 Aperçu
+## 🚀 Preview
 
-Ce projet met en avant mes compétences, mes projets et mes expériences professionnelles via une interface moderne, responsive et animée.
+This project highlights my skills, projects and professional experiences through a modern, responsive and animated interface.
 
-## ✨ Fonctionnalités principales
+## ✨ Features 
 
-- **Présentation** : Section "À propos" avec photo et description.
-- **Stack technique** : Compétences triées par catégories (Frontend, Backend, Mobile, Design…).
-- **Projets** : Cartes interactives avec liens vers les dépôts GitHub et les sites déployés, détails accessibles via pop-up.
-- **Expériences** : Mes expériences professionnelles.
-- **Contact** : Formulaire connecté à Formspree.
-- **Navigation responsive** : Menu burger animé (visible uniquement sur mobile).
-- **Scroll to Top** : Bouton pour remonter en haut de la page (visible uniquement sur desktop).
-- **Effets visuels** : Fond animé (particules).
+- **Presentation**: "About me" section with photo and description.
+- **Stack** : Skills sorted by categories (Frontend, Backend, Mobile, Design...).
+- **Projects**: Interactive maps with links to GitHub repositories and deployed sites, details accessible via pop-up.
+- **Experiences** : My professional experiences.
+- **Contact**: Form connected to Formspree.
+- **Responsive navigation**: Animated burger menu (only visible on mobile).
+- **Scroll to Top**: Button for scrolling to the top of the page (only visible on desktop).
+- **Visual effects**: Animated background (particles).
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies used
 
 - **Next.js** (React)
 - **Tailwind CSS** (design & responsive)
 - **Framer Motion** (animations)
-- **React Icons** & **Lucide React** (icônes)
-- **Formspree** (formulaire de contact)
+- **React Icons** & **Lucide React** (icons)
+- **Formspree** (contact form)
 
-## 🗂️ Structure du projet
+## 🗂️ Project structure
 
-- `components/` : Composants React (NavBar, Home, Skills, Projects, Experiences, Contact, Footer, ScrollToTop, etc.)
-- `public/` : Images et ressources statiques
-- `pages/` : Entrée Next.js
+- `components/` : Components React (NavBar, Home, Skills, Projects, Experiences, Contact, Footer, ScrollToTop, etc.)
+- `public/` : Static images and resources
+- `pages/` : Next.js input
 
-## 📦 Déploiement
+## 📦 Deployment
 
-Déployer sur Vercel.
+Deployed on Vercel.
 
 ---
 
