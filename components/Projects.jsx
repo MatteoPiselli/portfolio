@@ -190,7 +190,7 @@ export default function Projects() {
       {/* Pop-up modal */}
       {selected !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-          <div className="relative bg-[#191919] rounded-2xl shadow-2xl p-8 max-w-lg w-[90%] max-h-[90vh] animate-fade-in">
+          <div className="relative bg-[#191919] rounded-2xl shadow-2xl p-8 max-w-lg w-[90vw] max-h-[90vh] animate-fade-in overflow-y-auto scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin">
             {/* Bouton de fermeture */}
             <button
               className="absolute top-4 right-4 text-[#B4B4B4] hover:text-white"
