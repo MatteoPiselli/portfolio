@@ -1,7 +1,6 @@
 // Next
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 // Components
 import ParticlesBackground from "./Particles";
 import NavBar from "./NavBar";
@@ -13,6 +12,7 @@ import ScrollToTop from "./ScrollToTop";
 import Footer from "./Footer";
 // Icons
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Home() {
   return (
@@ -26,10 +26,11 @@ export default function Home() {
       </Head>
 
       {/* ------------Background----------- */}
-      <div className="relative w-full min-h-screen bg-gradient-to-b from-[#000] via-[#000] to-[#232526]">
+      <div className="relative bg-gradient-to-b min-h-screen w-full ">
         {/* --------- Navigation ---------- */}
         <div className="flex justify-center items-center mt-12">
           <NavBar />
+          <ThemeToggle />
           {/* ----------- Social Media Icons ------------*/}
           <div className="absolute right-20 z-20">
             <div className="flex space-x-4">
@@ -38,7 +39,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-[#EEEEEE] hover:text-[#A1A1A1] text-2xl cursor-pointer">
+                <span className="icon icon:hover text-2xl cursor-pointer">
                   <FaGithub />
                 </span>
               </a>
@@ -47,7 +48,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-[#EEEEEE] hover:text-[#A1A1A1] text-2xl cursor-pointer">
+                <span className="icon icon:hover text-2xl cursor-pointer">
                   <FaLinkedin />
                 </span>
               </a>
@@ -57,7 +58,7 @@ export default function Home() {
 
         {/* -------------About me------------ */}
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
-          <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-[#EEEEEE]">
+          <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-main">
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-2xl md:text-3xl font-bold mb-4">
                 Développeur Full-Stack Web & Mobile 💻 📱
