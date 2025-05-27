@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaGithub, FaGlobe, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
+import { image } from "framer-motion/client";
 
 const projects = [
   {
@@ -46,7 +47,8 @@ const projects = [
   },
   {
     title: "Portfolio v2",
-    image: "/projets/portfolio-v2.png",
+    image_light: "/projets/portfolio-v2-white.png",
+    image_dark: "/projets/portfolio-v2-black.png",
     repo: "https://github.com/MatteoPiselli/portfolio",
     url: "https://portfolio-matteo-pisellis-projects.vercel.app/",
     details: [
@@ -72,6 +74,20 @@ const projects = [
 
 export default function Projects() {
   const [selected, setSelected] = useState(null);
+  const [theme, setTheme] = useState("light");
+
+  // Détection du thème (light ou dark)
+  useEffect(() => {
+    const getTheme = () =>
+      document.documentElement.getAttribute("data-theme") || "light";
+    setTheme(getTheme());
+    const observer = new MutationObserver(() => setTheme(getTheme()));
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+    return () => observer.disconnect();
+  }, []);
 
   // Empêche le scroll du body quand la modale est ouverte
   useEffect(() => {
@@ -87,11 +103,11 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full min-h-screen bg-[#232526] text-white py-16 px-4"
+      className="relative w-full min-h-screen bg-color text-main py-16 px-4"
     >
       <div className="flex flex-col items-center mb-12">
         <h2 className="font-bold text-2xl md:text-4xl mb-8">Projets</h2>
-        <p className="text-lg text-center text-[#B4B4B4]">
+        <p className="text-lg text-center text-secondary">
           Des projets réalisés pour mettre en pratique mes compétences. Cliquez
           sur "Learn more" pour en savoir plus
         </p>
@@ -101,15 +117,21 @@ export default function Projects() {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="relative bg-[#191919] rounded-2xl shadow-lg overflow-hidden w-full md:w-80 flex flex-col"
+            className="relative bg-card rounded-2xl shadow-lg overflow-hidden w-full md:w-80 flex flex-col"
           >
             {/* Image du projet */}
             <Image
-              src={project.image}
+              src={
+                project.title === "Portfolio v2"
+                  ? theme === "light"
+                    ? project.image_light
+                    : project.image_dark
+                  : project.image
+              }
               alt={project.title}
               width={600}
               height={350}
-              className="object-cover w-full bg-[#313131] h-48"
+              className="object-cover w-full bg-main-inverse h-48"
             />
             {/* Contenu du projet */}
             <div className="flex-1 flex flex-col p-6 min-h-0">
@@ -118,7 +140,7 @@ export default function Projects() {
                 {project.stacks.map((stack) => (
                   <span
                     key={stack}
-                    className="bg-[#414345] text-xs px-2 py-1 rounded-full text-[#EEEEEE] font-semibold"
+                    className="bg-badge text-xs px-2 py-1 rounded-full text-main font-semibold"
                   >
                     {stack}
                   </span>
@@ -176,7 +198,7 @@ export default function Projects() {
                 {/* ---------- Learn more ------------*/}
                 <button
                   onClick={() => setSelected(idx)}
-                  className="ml-auto flex items-center gap-1 text-sm bg-[#414345] hover:bg-[#2A2A2A] px-3 py-1 rounded-full transition"
+                  className="ml-auto flex items-center gap-1 text-sm bg-learn bg-learn:hover px-3 py-1 rounded-full transition"
                 >
                   <span>Learn more</span>
                   <FaExternalLinkAlt size={14} />
@@ -190,10 +212,10 @@ export default function Projects() {
       {/* Pop-up modal */}
       {selected !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-          <div className="relative bg-[#191919] rounded-2xl shadow-2xl p-8 max-w-lg w-[90vw] max-h-[90vh] animate-fade-in overflow-y-auto scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin">
+          <div className="relative bg-card rounded-2xl shadow-2xl p-8 max-w-lg w-[90vw] max-h-[90vh] animate-fade-in overflow-y-auto scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin">
             {/* Bouton de fermeture */}
             <button
-              className="absolute top-4 right-4 text-[#B4B4B4] hover:text-white"
+              className="absolute top-4 right-4 text-secondary text-secondary:hover"
               onClick={() => setSelected(null)}
               aria-label="Fermer"
             >
@@ -206,11 +228,17 @@ export default function Projects() {
             </h3>
 
             <Image
-              src={projects[selected].image}
+              src={
+                projects[selected].title === "Portfolio v2"
+                  ? theme === "dark"
+                    ? projects[selected].image_dark
+                    : projects[selected].image_light
+                  : projects[selected].image
+              }
               alt={projects[selected].title}
               width={600}
               height={350}
-              className="object-cover bg-[#313131] rounded-lg"
+              className="object-cover bg-main-inverse rounded-lg"
             />
 
             {/* ----------- Description du projet scrollable---------------*/}
@@ -250,7 +278,7 @@ export default function Projects() {
                   href={projects[selected].repo_front}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#232526] px-4 py-2 rounded-full hover:bg-[#414345] transition"
+                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] transition px-4 py-2 rounded-full"
                 >
                   <FaGithub /> Front
                 </a>
@@ -260,7 +288,7 @@ export default function Projects() {
                   href={projects[selected].repo_back}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#232526] px-4 py-2 rounded-full hover:bg-[#414345] transition"
+                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full"
                 >
                   <FaGithub /> Back
                 </a>
@@ -270,7 +298,7 @@ export default function Projects() {
                   href={projects[selected].repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#232526] px-4 py-2 rounded-full hover:bg-[#414345] transition"
+                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full"
                 >
                   <FaGithub /> Code
                 </a>
@@ -280,14 +308,14 @@ export default function Projects() {
                   href={projects[selected].url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-[#232526] px-4 py-2 rounded-full hover:bg-[#414345] transition"
+                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full"
                 >
                   <FaGlobe /> Site
                 </a>
               )}
               {projects[selected].date && (
                 <div
-                  className="flex items-center gap-2 bg-[#232526] px-4 py-2 rounded-full hover:bg-[#414345] transition md:absolute md:right-0"
+                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full md:absolute md:right-0"
                   style={{ whiteSpace: "nowrap" }}
                 >
                   {projects[selected].date}
