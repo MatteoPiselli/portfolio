@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Experiences() {
   return (
-    <div className="relative w-full min-h-screen bg-[#232526] text-white">
+    <div className="relative w-full min-h-screen bg-color text-main">
       <div className="relative z-10 max-w-7xl mx-auto pt-24 px-4">
         <h2 id="experiences" className="text-4xl font-bold text-center mb-12">
           Expériences Professionnelles
@@ -10,12 +10,12 @@ export default function Experiences() {
 
         <div className="max-w-2xl mx-auto mt-24">
           <div>
-            <h2 className="text-2xl font-semibold mb-4 border-b border-white pb-2">
+            <h2 className="text-2xl font-semibold mb-4 border-b border-color pb-2">
               Développement 💻
             </h2>
             <div className="space-y-4">
               {/* Partenaires Particuliers */}
-              <div className="bg-[#191919] rounded-2xl p-4 shadow-lg">
+              <div className="bg-card rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
                 <div className="flex items-center mb-4 space-x-4">
                   <Image
@@ -26,7 +26,7 @@ export default function Experiences() {
                   />
                   <div className="flex flex-col">
                     <span>Partenaires Particuliers - Stage</span>
-                    <span className="text-gray-400 text-sm">
+                    <span className="text-secondary text-sm">
                       Reims (Février 2023 - Mars 2023)
                     </span>
                   </div>
@@ -74,7 +74,7 @@ export default function Experiences() {
               </div>
 
               {/* Transgourmet */}
-              <div className="bg-[#191919] rounded-2xl p-4 shadow-lg">
+              <div className="bg-card rounded-2xl p-4 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
                 <div className="flex items-center mb-4 space-x-4">
                   <Image
@@ -85,7 +85,7 @@ export default function Experiences() {
                   />
                   <div className="flex flex-col">
                     <span>Transgourmet France - Stage</span>
-                    <span className="text-gray-400 text-sm">
+                    <span className="text-secondary text-sm">
                       Valenton (Juin 2022 - Juillet 2022)
                     </span>
                   </div>
@@ -104,7 +104,7 @@ export default function Experiences() {
                 <p>📌 Missions confiées :</p>
                 <ul>
                   <li>✅ - Suivi des tracks Javascript d'Openclassroom.</li>
-                  <li>✅ - Manipulation du DOM et des API.</li>
+                  <li>✅ - Manipulation du DOM et des API REST.</li>
                 </ul>
               </div>
             </div>
