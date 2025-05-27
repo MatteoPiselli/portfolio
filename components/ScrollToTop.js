@@ -29,7 +29,7 @@ export default function ScrollToTopButton({ className = "" }) {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className={`${className} fixed bottom-4 md:bottom-8 right-4 md:right-8 bg-gradient-to-b from-[#18181b] via-[#232526] to-[#414345] text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 z-10 `}
+        className={`${className} fixed bottom-4 md:bottom-8 right-4 md:right-8 bg-gradient-to-b text-main p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 z-10 `}
       >
         <FaArrowUp className="w-5 h-5" />
       </button>
