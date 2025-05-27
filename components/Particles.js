@@ -1,15 +1,32 @@
-import { useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Particles from "react-particles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 const ParticlesBackground = () => {
+  const [color, setColor] = useState("#EEEEEE"); // valeur par défaut
+
+  useEffect(() => {
+    const updateColor = () => {
+      const theme = document.documentElement.getAttribute("data-theme");
+      setColor(theme === "dark" ? "#EEEEEE" : "#232526");
+    };
+
+    // Observer les changements d'attributs sur <html>
+    const observer = new MutationObserver(updateColor);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+
+    // Set initial color
+    updateColor();
+
+    return () => observer.disconnect();
+  }, []);
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    //await loadFull(engine);
     await loadSlim(engine);
   }, []);
 
@@ -41,7 +58,7 @@ const ParticlesBackground = () => {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: color,
           },
           links: {
             color: "#ffffff",
