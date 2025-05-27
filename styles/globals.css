@@ -49,37 +49,61 @@ html {
 /*-------- Mode clair -------*/
 :root {
   --bg-body: #fff;
+  --bg-color: #f5f5f5;
   --bg-gradient-from: #fff;
   --bg-gradient-via: #fff;
   --bg-gradient-to: #f5f5f5;
+  --bg-input: #F9F9F9;
+  --bg-submit: #232526;
   --text-main: #202020;
+  --text-main-inverse: #fff;
+  --main-inverse: #E0E0E0;
   --text-secondary: #646464;
   --text-link: #202020;
   --text-link-hover: #A1A1A1;
   --nav-bg: #F0F0F0;
   --card-bg: #F9F9F9;
-  --card-shadow: #e0e0e0;
+  --badge-bg: #E0E0E0;
+  --learn-bg: #E0E0E0;
+  --learn-hover: #CECECE;
   --icon: #202020;
   --icon-hover: #E8E8E8;
   --btn-color: #202020;
+  --particles-color: #202020;
+  --border-b: #000;
+  --border-t: #000;
+  --border-input: #E0E0E0;
+  --border-input-focus: #CECECE;
 }
 
 /*-------- Mode sombre -------*/
 [data-theme="dark"] {
   --bg-body: #000;
+  --bg-color: #232526;
   --bg-gradient-from: #000;
   --bg-gradient-via: #000;
   --bg-gradient-to: #232526;
+  --bg-input: #222222;
+  --bg-submit: #f5f5f5;
   --text-main: #EEEEEE;
+  --text-main-inverse: #000;
+  --main-inverse: #313131;
   --text-secondary: #B4B4B4;
   --text-link: #EEEEEE;
   --text-link-hover: #A1A1A1;
   --nav-bg: #222222;
   --card-bg: #191919;
-  --card-shadow: #111;
+  --badge-bg: #313131;
+  --learn-bg: #313131;
+  --learn-hover: #484848;
   --icon: #EEEEEE;
   --icon-hover: #A1A1A1;
   --btn-color: #EEEEEE;
+  --particles-color: #EEEEEE;
+  --border-b: #fff;
+  --border-t: #fff;
+  --border-input: #3A3A3A;
+  --border-input-focus: #484848;
 }
 
 /* Utilisation des variables dans les classes Tailwind personnalisées */
@@ -87,12 +111,44 @@ html {
   background-image: linear-gradient(to bottom, var(--bg-gradient-from), var(--bg-gradient-via), var(--bg-gradient-to));
 }
 
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--bg-gradient-from), var(--bg-gradient-via), var(--bg-gradient-to));
+}
+
+.bg-body {
+  background-color: var(--bg-body);
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+
+.bg-main-inverse {
+  background-color: var(--main-inverse);
+}
+
+.bg-input {
+  background-color: var(--bg-input);
+}
+
+.bg-submit {
+  background-color: var(--bg-submit);
+}
+
 .text-main {
   color: var(--text-main);
 }
 
+.text-main-inverse {
+  color: var(--text-main-inverse);
+}
+
 .text-secondary {
   color: var(--text-secondary);
+}
+
+.text-secondary:hover {
+  color: var(--text-link-hover);
 }
 
 .text-link {
@@ -111,8 +167,16 @@ html {
   background-color: var(--card-bg);
 }
 
-.shadow-card {
-  box-shadow: 0 4px 24px 0 var(--card-shadow);
+.bg-badge {
+  background-color: var(--badge-bg);
+}
+
+.bg-learn {
+  background-color: var(--learn-bg);
+}
+
+.bg-learn:hover {
+  background-color: var(--learn-hover);
 }
 
 .icon {
@@ -125,4 +189,24 @@ html {
 
 .btn-color {
   color: var(--btn-color);
+}
+
+.particle-color {
+  color: var(--particles-color);
+}
+
+.border-b {
+  border-bottom: 2px solid var(--border-b);
+}
+
+.border-t {
+  border-top: 1px solid var(--border-t);
+}
+
+.border-input {
+  border: 1px solid var(--border-input);
+}
+
+.border-input:focus {
+  border-color: var(--border-input-focus);
 }
