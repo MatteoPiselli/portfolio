@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -109,6 +111,27 @@ export default function Navbar() {
                       </span>
                     </Link>
                   </li>
+                  <div className="flex items-center space-x-4">
+                    <a
+                      href="https://github.com/MatteoPiselli"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="icon icon:hover text-2xl cursor-pointer">
+                        <FaGithub />
+                      </span>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/matteo-piselli/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="icon icon:hover text-2xl cursor-pointer">
+                        <FaLinkedin />
+                      </span>
+                    </a>
+                    <ThemeToggle mobile />
+                  </div>
                 </ul>
               </motion.div>
             </div>
