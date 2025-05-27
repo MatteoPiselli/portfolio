@@ -83,7 +83,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative w-full min-h-screen py-20 bg-gradient-to-t from-black via-black to-[#232526] text-white flex flex-col items-center px-6"
+      className="relative w-full min-h-screen py-20 bg-gradient-to-t text-main flex flex-col items-center px-6"
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
         On travaille ensemble ?
@@ -95,7 +95,7 @@ export default function Contact() {
 
       {/* ------------ Affichage du message de succès ou du formulaire ------------- */}
       {state.succeeded ? (
-        <div className="bg-green-600 z-10 text-white p-6 rounded-xl text-center shadow-xl animate-fade-in">
+        <div className="bg-green-600 z-10 text-main p-6 rounded-xl text-center shadow-xl animate-fade-in">
           <h3 className="text-2xl font-bold mb-2">
             Merci pour votre message !
           </h3>
@@ -117,7 +117,7 @@ export default function Contact() {
               required
               value={form.name}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-[#222222] border border-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#484848]"
+              className="w-full p-3 rounded-lg text-main placeholder-gray-400 bg-input border-input focus:outline-none focus:ring-2 focus:ring-[var(--border-input-focus)] focus:border-[var(--border-input-focus)]"
               placeholder="Votre nom"
             />
             {errors.name && (
@@ -136,7 +136,7 @@ export default function Contact() {
               required
               value={form.email}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-[#222222] border border-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#484848]"
+              className="w-full p-3 rounded-lg text-main placeholder-gray-400 bg-input border-input focus:outline-none focus:ring-2 focus:ring-[var(--border-input-focus)] focus:border-[var(--border-input-focus)]"
               placeholder="votre@email.com"
             />
             {errors.email && (
@@ -160,7 +160,7 @@ export default function Contact() {
               required
               value={form.message}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg bg-[#222222] border border-[#3A3A3A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#484848]"
+              className="w-full p-3 rounded-lg text-main placeholder-gray-400 bg-input border-input focus:outline-none focus:ring-2 focus:ring-[var(--border-input-focus)] focus:border-[var(--border-input-focus)]"
               placeholder="Votre message..."
             ></textarea>
             {errors.message && (
@@ -176,7 +176,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className={`w-full bg-white text-black font-semibold py-3 px-6 rounded-xl transition ${
+            className={`w-full bg-submit text-main-inverse font-semibold py-3 px-6 rounded-xl transition ${
               state.submitting
                 ? "opacity-50 cursor-not-allowed"
                 : "hover:bg-[#7B7B7B]"
