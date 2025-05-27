@@ -70,7 +70,7 @@ export default function Navbar() {
                 className="md:hidden absolute w-full bg-nav rounded-b-2xl shadow-md z-10"
                 style={{ marginTop: "-1px" }} // pour coller parfaitement à la navbar
               >
-                <ul className="flex flex-col ml-4 space-y-3 mb-2 text-md font-light">
+                <ul className="flex flex-col ml-4 mr-4 mb-2 space-y-3 text-md font-light">
                   <li>
                     <Link href="#skills" scroll={true}>
                       <span
@@ -111,7 +111,7 @@ export default function Navbar() {
                       </span>
                     </Link>
                   </li>
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center border-t pt-2 space-x-4">
                     <a
                       href="https://github.com/MatteoPiselli"
                       target="_blank"
@@ -130,7 +130,9 @@ export default function Navbar() {
                         <FaLinkedin />
                       </span>
                     </a>
-                    <ThemeToggle mobile />
+                    <div className="absolute right-4">
+                      <ThemeToggle mobile />
+                    </div>
                   </div>
                 </ul>
               </motion.div>
