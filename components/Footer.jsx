@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#000] text-white border-t border-white py-8 z-10">
+    <footer className="relative bg-body text-main border-t py-8 z-10">
       <div className="container mx-auto px-4 mt-4 flex flex-col md:flex-row justify-between items-center">
         {/* Informations de contact */}
         <div className="mb-4 md:mb-0">
@@ -26,12 +26,12 @@ export default function Footer() {
         {/* Liens de réseaux sociaux */}
         <div className="flex space-x-6">
           <Link href="https://github.com/MatteoPiselli">
-            <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+            <span className="text-main hover:text-[#A1A1A1] text-2xl cursor-pointer">
               <FaGithub />
             </span>
           </Link>
           <Link href="https://www.linkedin.com/in/matteo-piselli/">
-            <span className="text-white hover:text-[#A1A1A1] text-2xl cursor-pointer">
+            <span className="text-main hover:text-[#A1A1A1] text-2xl cursor-pointer">
               <FaLinkedin />
             </span>
           </Link>
