@@ -44,7 +44,7 @@ const ThemeToggle = ({ mobile = false }) => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className={`bg-card text-main px-4 py-2 rounded shadow-card z-20 ${
+      className={`bg-card text-main px-4 py-2 rounded-lg shadow-card z-20 ${
         mobile ? "block md:hidden" : "hidden md:block"
       }`}
     >
