@@ -30,10 +30,9 @@ export default function Home() {
         {/* --------- Navigation ---------- */}
         <div className="flex justify-center items-center mt-12">
           <NavBar />
-          <ThemeToggle />
           {/* ----------- Social Media Icons ------------*/}
-          <div className="absolute right-20 z-20">
-            <div className="flex space-x-4">
+          <div className="hidden md:block absolute right-20 z-20">
+            <div className="flex items-center space-x-4">
               <a
                 href="https://github.com/MatteoPiselli"
                 target="_blank"
@@ -52,6 +51,7 @@ export default function Home() {
                   <FaLinkedin />
                 </span>
               </a>
+              <ThemeToggle /> {/* Desktop version */}
             </div>
           </div>
         </div>
