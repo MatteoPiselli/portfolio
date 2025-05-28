@@ -111,7 +111,7 @@ export default function Navbar() {
                       </span>
                     </Link>
                   </li>
-                  <div className="flex items-center border-t pt-2 space-x-4">
+                  <div className="flex items-center border-t pt-4 pb-2 space-x-4">
                     <a
                       href="https://github.com/MatteoPiselli"
                       target="_blank"
