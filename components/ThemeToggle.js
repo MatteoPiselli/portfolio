@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const ThemeToggle = ({ mobile = false }) => {
   const [theme, setTheme] = useState(() => {
