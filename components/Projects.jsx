@@ -61,13 +61,20 @@ const projects = [
   {
     title: "Riot API",
     image: "/projets/riot-api.png",
-    repo: "https://github.com/MatteoPiselli/riot-api",
+    repo_front: "https://github.com/MatteoPiselli/leagueoflegends-api-frontend",
+    repo_back: "https://github.com/MatteoPiselli/leagueoflegends-api-backend",
     url: null,
     details: [
       "En cours de développement...",
-      "Projet de recherche de joueurs basé sur l'API League of Legends, inspiré d'OP.GG.",
+      "Projet de recherche de joueurs League of Legends basé sur l'API de Riot Games, inspiré d'OP.GG.",
     ],
-    stacks: ["React", "Node.js", "Express.js", "API Riot Games"],
+    stacks: [
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "API Riot Games",
+    ],
     date: "2025",
   },
 ];
