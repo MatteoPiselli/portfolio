@@ -115,8 +115,7 @@ export default function Projects() {
       <div className="flex flex-col items-center mb-12">
         <h2 className="font-bold text-2xl md:text-4xl mb-8">Projets</h2>
         <p className="text-lg text-center text-secondary">
-          Des projets réalisés pour mettre en pratique mes compétences. Cliquez
-          sur "Learn more" pour en savoir plus
+          Des projets réalisés pour mettre en pratique mes compétences.
         </p>
       </div>
 
@@ -207,7 +206,7 @@ export default function Projects() {
                   onClick={() => setSelected(idx)}
                   className="ml-auto flex items-center gap-1 text-sm bg-learn bg-learn:hover px-3 py-1 rounded-full transition"
                 >
-                  <span>Learn more</span>
+                  <span>En savoir plus</span>
                   <FaExternalLinkAlt size={14} />
                 </button>
               </div>
