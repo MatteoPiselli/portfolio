@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaGithub, FaGlobe, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
-import { image } from "framer-motion/client";
 
 const projects = [
   {
     title: "Unimap+",
-    image: "/projets/unimap-black.png",
+    image: "/projets/unimap.png",
     repo_front: "https://github.com/Myl-W/Unimap-frontend",
     repo_back: "https://github.com/Myl-W/Unimap-backend",
     url: null,
@@ -59,7 +58,7 @@ const projects = [
     date: "2025",
   },
   {
-    title: "Riot API",
+    title: "SummonerFinder.gg",
     image: "/projets/riot-api.png",
     repo_front: "https://github.com/MatteoPiselli/leagueoflegends-api-frontend",
     repo_back: "https://github.com/MatteoPiselli/leagueoflegends-api-backend",
