@@ -4,17 +4,39 @@ import { FaGithub, FaGlobe, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 const projects = [
   {
+    title: "SummonerFinder.gg",
+    image: "/projets/summoner-finder.png",
+    repo_front: "https://github.com/MatteoPiselli/leagueoflegends-api-frontend",
+    repo_back: "https://github.com/MatteoPiselli/leagueoflegends-api-backend",
+    url: null,
+    details: [
+      "Développement d'une application web permettant de rechercher des joueurs League of Legends reposant sur l'API de Riot Games.",
+      "- Recherche par username et tagline avec affichage du profil, parties récentes, champions joués, runes, etc.",
+      "- Mise en place d'une API REST avec Express.js pour gérer les requêtes vers l'API Riot et centraliser la logique serveur.",
+    ],
+    stacks: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Node.js",
+      "Express.js",
+      "API Riot Games",
+    ],
+    date: "2025",
+  },
+  {
     title: "Unimap+",
     image: "/projets/unimap.png",
     repo_front: "https://github.com/Myl-W/Unimap-frontend",
     repo_back: "https://github.com/Myl-W/Unimap-backend",
     url: null,
     details: [
-      "UniMap+ est une application mobile réalisée en 10 jours dans le cadre d’un projet de fin de batch par une équipe de quatre développeurs, dédiée à l'amélioration de l’accessibilité urbaine pour tous :",
-      "Personnes en situation de handicap (visuel, auditif, moteur ou cognitif), seniors, parents avec poussette, mais aussi professionnels de santé et aidants.",
-      "Elle propose une carte interactive, la gestion de signalements, la prise de photos géolocalisées, ainsi que d'autres fonctionnalités pensées pour faciliter les déplacements et la navigation en milieu urbain.",
-      "UniMap+ repose sur une communauté d'utilisateurs : chacun peut signaler des obstacles, recommander des lieux accessibles ou partager des informations utiles.",
-      "Ensemble, nous construisons une ville plus inclusive, par et pour ses usagers.",
+      "Développement d'une application mobile (10 jours) dédiée à améliorer l'accessibilité des lieux publics pour les personnes en situation de handicap (visuel, auditif, seniors), parents avec poussette et bien d'autres... via une carte interactive enrichie par les utilisateurs.",
+      "- Affichage d'une carte collaborative indiquant les lieux accessibles.",
+      "- Ajout de signalements (prise de photos géolocalisées) et modification d'informations par les utilisateurs.",
+      "- Authentification utilisateur sécurisée avec JWT.",
+      "- Sauvegarde des données sur une base MongoDB, hachage des mots de passe et traitement via une API REST Express.js.",
+      "Unimap+ repose sur une communauté d'utilisateurs où chacun peut signaler les obstacles, recommander des lieux accessibles et partager des informations utiles.",
     ],
     developpeurs: [
       {
@@ -37,10 +59,11 @@ const projects = [
     stacks: [
       "React Native",
       "Expo",
+      "Redux Toolkit",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "API Google",
+      "API Google Maps",
     ],
     date: "2025",
   },
@@ -55,25 +78,6 @@ const projects = [
       "Ce projet met en avant mes compétences, mes projets et mes expériences professionnelles via une interface moderne, responsive et animée.",
     ],
     stacks: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    date: "2025",
-  },
-  {
-    title: "SummonerFinder.gg",
-    image: "/projets/riot-api.png",
-    repo_front: "https://github.com/MatteoPiselli/leagueoflegends-api-frontend",
-    repo_back: "https://github.com/MatteoPiselli/leagueoflegends-api-backend",
-    url: null,
-    details: [
-      "En cours de développement...",
-      "Projet de recherche de joueurs League of Legends basé sur l'API de Riot Games, inspiré d'OP.GG.",
-    ],
-    stacks: [
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "API Riot Games",
-    ],
     date: "2025",
   },
 ];
@@ -134,14 +138,14 @@ export default function Projects() {
                   : project.image
               }
               alt={project.title}
-              width={600}
+              width={700}
               height={350}
               className="object-cover w-full bg-main-inverse h-48"
             />
             {/* Contenu du projet */}
-            <div className="flex-1 flex flex-col p-6 min-h-0">
+            <div className="flex-1 flex flex-col p-4 min-h-0">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <div className="flex flex-wrap gap-2 pt-2 pb-8 flex-1 h-full items-start">
+              <div className="flex flex-wrap gap-2 pt-2 pb-8 h-full items-start">
                 {project.stacks.map((stack) => (
                   <span
                     key={stack}
@@ -241,7 +245,7 @@ export default function Projects() {
                   : projects[selected].image
               }
               alt={projects[selected].title}
-              width={600}
+              width={700}
               height={350}
               className="object-cover bg-main-inverse rounded-lg"
             />
