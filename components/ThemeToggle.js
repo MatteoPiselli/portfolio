@@ -3,46 +3,69 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const ThemeToggle = ({ mobile = false }) => {
-  const [theme, setTheme] = useState(() => {
-    // Lecture initiale du thème depuis localStorage ou data-theme
-    if (typeof window !== "undefined") {
-      return (
-        localStorage.getItem("theme") ||
-        document.documentElement.getAttribute("data-theme") ||
-        "dark"
-      );
-    }
-    return "dark";
-  });
+  const [theme, setTheme] = useState("dark");
+  const [mounted, setMounted] = useState(false);
+
+  // Premier effet : marquer comme monté et initialiser le thème
+  useEffect(() => {
+    setMounted(true);
+    const stored = localStorage.getItem("theme");
+    const dataTheme = document.documentElement.getAttribute("data-theme");
+    const initialTheme = stored || dataTheme || "dark";
+    setTheme(initialTheme);
+  }, []);
 
   // Synchronise le state si le thème change ailleurs (autre instance)
   useEffect(() => {
+    const current =
+      localStorage.getItem("theme") ||
+      document.documentElement.getAttribute("data-theme") ||
+      "dark";
+
+    // Ne met à jour que si le thème actuel est différent de celui en mémoire
+    if (current !== theme) {
+      setTheme(current);
+    }
+
     const syncTheme = () => {
-      const current =
+      const updated =
         localStorage.getItem("theme") ||
         document.documentElement.getAttribute("data-theme") ||
         "dark";
-      setTheme(current);
+      setTheme((prev) => {
+        // Ne met à jour que si différent de la valeur précédente
+        return updated !== prev ? updated : prev;
+      });
     };
+
     window.addEventListener("storage", syncTheme);
-    // Pour le cas où data-theme change sans storage (ex: navigation responsive)
+
     const observer = new MutationObserver(syncTheme);
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["data-theme"],
     });
+
     return () => {
       window.removeEventListener("storage", syncTheme);
       observer.disconnect();
     };
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
   }, [theme]);
 
+  useEffect(() => {
+    // Ne pas sauvegarder lors de l'initialisation
+    if (mounted) {
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }
+  }, [theme, mounted]);
+
   const isDark = theme === "dark";
+
+  // Ne pas afficher tant que le composant n'est pas monté (évite l'hydratation mismatch)
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div
