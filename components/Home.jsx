@@ -64,8 +64,7 @@ export default function Home() {
                 Développeur Full-Stack Web & Mobile 💻 📱
               </h1>
               <p className="text-lg font-light">
-                👋 Salut, moi c’est Matteo PISELLI - Développeur Full-Stack Web
-                & Mobile Js.
+                👋 Salut, moi c’est Matteo PISELLI.
                 <br />
                 Je crée des applications web et mobiles modernes et
                 performantes.
