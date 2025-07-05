@@ -60,15 +60,32 @@ export default function Home() {
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-main">
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-2xl md:text-3xl font-bold mb-4">
-                Développeur Full-Stack Web & Mobile 💻 📱
+              <h1 className="text-2xl md:text-3xl font-bold mb-8">
+                Développeur Full-Stack web et mobile 💻 📱
               </h1>
-              <p className="text-lg font-light">
-                👋 Salut, moi c’est Matteo PISELLI.
-                <br />
-                Je crée des applications web et mobiles modernes et
-                performantes.
-              </p>
+              <div className="text-lg font-light space-y-2">
+                <p>👋🏻 Salut, moi c’est Matteo PISELLI.</p>
+                <p>
+                  👨🏻‍💻 Je conçois des applications modernes et performantes en{" "}
+                  <span className="inline-flex items-center gap-1 bg-blue-500 text-white px-2 py-1 rounded-md text-sm font-medium mx-1">
+                    React
+                  </span>
+                  ,{" "}
+                  <span className="inline-flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded-md text-sm font-medium mx-1">
+                    Node.js
+                  </span>{" "}
+                  et{" "}
+                  <span className="inline-flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded-md text-sm font-medium mx-1">
+                    MongoDB
+                  </span>
+                  .
+                </p>
+                <p>
+                  🎯 Rigoureux, autonome et passionné, je cherche une alternance
+                  pour continuer à progresser sur des projets concrets, tout en
+                  apportant mes compétences à une équipe dynamique.
+                </p>
+              </div>
             </div>
             {/* -----------Picture---------- */}
             <div className="w-[200px] h-[200px] rounded-full overflow-hidden relative shadow-lg">
