@@ -63,19 +63,20 @@ export default function Home() {
               <h1 className="text-2xl md:text-3xl font-bold mb-8">
                 Développeur Full-Stack web et mobile 💻 📱
               </h1>
-              <div className="text-lg font-light space-y-2">
+              <div className="text-lg font-light space-y-4">
                 <p>👋🏻 Salut, moi c’est Matteo PISELLI.</p>
                 <p>
-                  👨🏻‍💻 Je conçois des applications modernes et performantes en{" "}
-                  <span className="inline-flex items-center gap-1 bg-blue-500 text-white px-2 py-1 rounded-md text-sm font-medium mx-1">
+                  👨🏻‍💻 Je conçois des applications modernes et performantes en
+                  <br />
+                  <span className="inline-flex items-center gap-1 bg-blue-400 text-white px-2 py-1 rounded-md text-sm font-medium">
                     React
                   </span>
                   ,{" "}
-                  <span className="inline-flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded-md text-sm font-medium mx-1">
+                  <span className="inline-flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded-md text-sm font-medium">
                     Node.js
                   </span>{" "}
                   et{" "}
-                  <span className="inline-flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded-md text-sm font-medium mx-1">
+                  <span className="inline-flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded-md text-sm font-medium">
                     MongoDB
                   </span>
                   .
