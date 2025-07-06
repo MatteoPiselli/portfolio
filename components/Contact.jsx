@@ -89,8 +89,7 @@ export default function Contact() {
         On travaille ensemble ?
       </h2>
       <p className="text-lg text-center mb-10 max-w-xl">
-        N'hésitez pas à m'écrire via ce formulaire pour discuter de votre
-        projet.
+        N'hésitez pas à m'écrire via ce formulaire !
       </p>
 
       {/* ------------ Affichage du message de succès ou du formulaire ------------- */}
