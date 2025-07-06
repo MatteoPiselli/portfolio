@@ -78,7 +78,7 @@ const projects = [
       "- Animations avec Framer motion.",
       "- Bibliothèque JavaScript particles.js.",
     ],
-    stacks: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    stacks: ["Next.js", "Tailwind CSS"],
     date: "2025",
   },
 ];
