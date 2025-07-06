@@ -1,5 +1,36 @@
 import Image from "next/image";
 
+const experiencesData = {
+  "Développement 💻": [
+    {
+      title: "Développeur Web Stagiaire",
+      company: "Partenaires Particuliers",
+      logo: "/experiences/partenaires-particuliers.png",
+      period: "2023",
+      tasks: [
+        "Refonte complète du site vitrine de l’entreprise.",
+        "Intégration responsive pour tous formats d’écran.",
+      ],
+      stack: "HTML, CSS, Javascript",
+      link: "https://www.partenaires-particuliers.fr/",
+      image: "/experiences/partenaires-particuliers-mini.jpg",
+    },
+    {
+      title: "Développeur Web Stagiaire",
+      company: "Transgourmet France",
+      logo: "/experiences/transgourmet.png",
+      period: "2022",
+      tasks: [
+        "Découverte de JavaScript, manipulation du DOM.",
+        "Formation via OpenClassrooms + premiers scripts dynamiques.",
+      ],
+      stack: "HTML, CSS, Javascript",
+      link: "https://www.transgourmet.fr/",
+      image: "/experiences/transgourmet-mini.png",
+    },
+  ],
+};
+
 export default function Experiences() {
   return (
     <div className="relative w-full min-h-screen bg-color text-main">
@@ -8,107 +39,85 @@ export default function Experiences() {
           Expériences Professionnelles
         </h2>
 
-        <div className="max-w-2xl mx-auto mt-24">
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 border-b border-color pb-2">
-              Développement 💻
-            </h2>
-            <div className="space-y-4">
-              {/* Partenaires Particuliers */}
-              <div className="bg-card rounded-2xl p-4 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
-                <div className="flex items-center mb-4 space-x-4">
-                  <Image
-                    src="/experiences/partenaires-particuliers.png"
-                    alt="partenaires-particuliers-logo"
-                    width={56}
-                    height={56}
-                  />
-                  <div className="flex flex-col">
-                    <span>Partenaires Particuliers - Stage</span>
-                    <span className="text-secondary text-sm">
-                      Reims (Février 2023 - Mars 2023)
-                    </span>
-                  </div>
-                </div>
-                <span>💻 Stage de 2ème année de BTS</span>
-                <br />
-                <br />
-                <p>
-                  Au cours de ce stage, j’ai participé à la refonte du site web
-                  de l’entreprise afin d’améliorer son design et d'ajouter de
-                  nouveaux éléments 🏗.
-                </p>
-                <br />
-                <p>📌 Missions réalisées :</p>
-                <ul>
-                  <li>✅ - Refonte / redesign du site web de l'entreprise.</li>
-                  <li>✅ - Ajout de nouveaux éléments.</li>
-                  <li>
-                    ✅ - Utilisation des MediaQueries pour avoir un site web
-                    responsive.
-                  </li>
-                </ul>
-                <br />
-                <span>
-                  <u>Stack</u> : HTML, CSS, Javascript.
-                </span>
+        <div className="max-w-4xl mx-auto mt-24">
+          {Object.entries(experiencesData).map(([category, experiences]) => (
+            <div key={category}>
+              <h2 className="text-2xl font-semibold mb-8 border-b border-color pb-2">
+                {category}
+              </h2>
 
-                <div className="flex mt-4">
-                  <Image
-                    src="/experiences/partenaires-particuliers-mini.jpg"
-                    alt="partenaires-particuliers-miniature"
-                    width={100}
-                    height={56}
-                    className="rounded-lg"
-                  />
-                  <a
-                    className="flex items-center ml-4 italic hover:opacity-50 hover:scale-[1.1] transition-all"
-                    href="https://www.partenaires-particuliers.fr/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+              <div className="space-y-8">
+                {experiences.map((exp, index) => (
+                  <div
+                    key={index}
+                    className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
                   >
-                    Partenaires Particuliers
-                  </a>
-                </div>
-              </div>
+                    {/* En-tête de l'expérience */}
+                    <div className="flex items-center justify-between mb-6">
+                      <div className="flex items-center space-x-4">
+                        <div className="w-14 h-14 relative">
+                          <Image
+                            src={exp.logo}
+                            alt={`${exp.company} logo`}
+                            layout="fill"
+                            className="object-contain rounded-lg"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">{exp.title}</h3>
+                          <p className="text-lg text-main">{exp.company}</p>
+                          <p className="text-secondary text-sm">{exp.period}</p>
+                        </div>
+                      </div>
+                    </div>
 
-              {/* Transgourmet */}
-              <div className="bg-card rounded-2xl p-4 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Développeur Web</h3>
-                <div className="flex items-center mb-4 space-x-4">
-                  <Image
-                    src="/experiences/transgourmet.png"
-                    alt="transgourmet-france-logo"
-                    width={56}
-                    height={56}
-                  />
-                  <div className="flex flex-col">
-                    <span>Transgourmet France - Stage</span>
-                    <span className="text-secondary text-sm">
-                      Valenton (Juin 2022 - Juillet 2022)
-                    </span>
+                    {/* Missions réalisées */}
+                    <div className="mb-6">
+                      <h4 className="text-lg font-semibold mb-3">
+                        📌 Missions réalisées :
+                      </h4>
+                      <ul className="space-y-2">
+                        {exp.tasks.map((task, taskIndex) => (
+                          <li key={taskIndex} className="flex items-start">
+                            <span className="mr-2">✅</span>
+                            <span>{task}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Stack technique */}
+                    <div className="mb-6">
+                      <p className="font-semibold">
+                        <span className="underline">Stack technique</span> :{" "}
+                        {exp.stack}
+                      </p>
+                    </div>
+
+                    {/* Lien et aperçu */}
+                    <div className="flex items-center space-x-4">
+                      <div className="w-24 h-14 relative rounded-lg overflow-hidden">
+                        <Image
+                          src={exp.image}
+                          alt={`${exp.company} aperçu`}
+                          layout="fill"
+                          className="object-cover"
+                        />
+                      </div>
+                      <a
+                        href={exp.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center italic hover:opacity-70 hover:scale-105 transition-all duration-200 text-blue-500 hover:text-blue-600"
+                      >
+                        Voir le site web →
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <span>💻 Stage de 1ère année de BTS</span>
-                <br />
-                <br />
-                <p>
-                  Au cours de ce stage, j’ai acquis une première expérience avec
-                  Javascript. Cette expérience a été très enrichissante et
-                  bénéfique pour mes compétences professionnelles. En effet cela
-                  m'a permis d'apprendre à rendre des pages web dynamiques et
-                  interactives.
-                </p>
-                <br />
-                <p>📌 Missions confiées :</p>
-                <ul>
-                  <li>✅ - Suivi des tracks Javascript d'Openclassroom.</li>
-                  <li>✅ - Manipulation du DOM et des API REST.</li>
-                </ul>
+                ))}
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
