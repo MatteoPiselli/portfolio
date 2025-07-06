@@ -68,7 +68,7 @@ export default function Home() {
                 <p>
                   👨🏻‍💻 Je conçois des applications modernes et performantes en
                   <br />
-                  <span className="inline-flex items-center gap-1 bg-blue-400 text-white px-2 py-1 rounded-md text-sm font-medium">
+                  <span className="inline-flex items-center gap-1 bg-blue-500 text-white px-2 py-1 rounded-md text-sm font-medium">
                     React
                   </span>
                   ,{" "}
