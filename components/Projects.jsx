@@ -10,14 +10,15 @@ const projects = [
     repo_back: "https://github.com/MatteoPiselli/leagueoflegends-api-backend",
     url: null,
     details: [
-      "Développement d'une application web permettant de rechercher des joueurs League of Legends reposant sur l'API de Riot Games.",
-      "- Recherche par username et tagline avec affichage du profil, parties récentes, champions joués, runes, etc.",
-      "- Mise en place d'une API REST avec Express.js pour gérer les requêtes vers l'API Riot et centraliser la logique serveur.",
+      "Application web permettant de rechercher des profils de joueurs League of Legends.",
+      "- Recherche par username et tagline avec affichage du profil, des parties récentes, des champions joués, etc.",
+      "- Développement d’une API REST en Node.js / Express pour interagir avec l’API de Riot Games.",
+      "- Création de l’interface utilisateur avec Next.js et Tailwind CSS.",
+      "- Mise en place d’un affichage dynamique des statistiques de jeu.",
     ],
     stacks: [
       "Next.js",
       "Tailwind CSS",
-      "Framer Motion",
       "Node.js",
       "Express.js",
       "API Riot Games",
@@ -31,12 +32,11 @@ const projects = [
     repo_back: "https://github.com/Myl-W/Unimap-backend",
     url: null,
     details: [
-      "Développement d'une application mobile (10 jours) dédiée à améliorer l'accessibilité des lieux publics pour les personnes en situation de handicap (visuel, auditif, seniors), parents avec poussette et bien d'autres... via une carte interactive enrichie par les utilisateurs.",
-      "- Affichage d'une carte collaborative indiquant les lieux accessibles.",
-      "- Ajout de signalements (prise de photos géolocalisées) et modification d'informations par les utilisateurs.",
-      "- Authentification utilisateur sécurisée avec JWT.",
-      "- Sauvegarde des données sur une base MongoDB, hachage des mots de passe et traitement via une API REST Express.js.",
-      "Unimap+ repose sur une communauté d'utilisateurs où chacun peut signaler les obstacles, recommander des lieux accessibles et partager des informations utiles.",
+      "Application mobile collaborative dédiée à l’accessibilité des lieux publics.",
+      "- Interface développée en React Native / Expo, intégration de Google Maps.",
+      "- Authentification sécurisée avec JWT, API REST en Express.js.",
+      "- Stockage des signalements et des données utilisateurs dans MongoDB.",
+      "- Travail en équipe avec répartition des rôles, communication continue et usage de Git.",
     ],
     developpeurs: [
       {
@@ -59,7 +59,6 @@ const projects = [
     stacks: [
       "React Native",
       "Expo",
-      "Redux Toolkit",
       "Node.js",
       "Express.js",
       "MongoDB",
@@ -74,8 +73,10 @@ const projects = [
     repo: "https://github.com/MatteoPiselli/portfolio",
     url: "https://portfolio-matteo-pisellis-projects.vercel.app/",
     details: [
-      "Mon portfolio actuel, entièrement refait.",
-      "Ce projet met en avant mes compétences, mes projets et mes expériences professionnelles via une interface moderne, responsive et animée.",
+      "Application web mettant en avant mes compétences, projets et expériences professionnelles.",
+      "- Interface moderne, responsive et animée en Next.js et Tailwind CSS.",
+      "- Animations avec Framer motion.",
+      "- Bibliothèque JavaScript particles.js.",
     ],
     stacks: ["Next.js", "Tailwind CSS", "Framer Motion"],
     date: "2025",
