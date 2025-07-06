@@ -288,7 +288,7 @@ export default function Projects() {
                   href={projects[selected].repo_front}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] transition px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] transition px-4 py-2 rounded-full"
                 >
                   <FaGithub /> Front
                 </a>
@@ -298,7 +298,7 @@ export default function Projects() {
                   href={projects[selected].repo_back}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full"
                 >
                   <FaGithub /> Back
                 </a>
@@ -308,7 +308,7 @@ export default function Projects() {
                   href={projects[selected].repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full"
                 >
                   <FaGithub /> Code
                 </a>
@@ -318,14 +318,14 @@ export default function Projects() {
                   href={projects[selected].url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full"
                 >
                   <FaGlobe /> Site
                 </a>
               )}
               {projects[selected].date && (
                 <div
-                  className="flex items-center gap-2 bg-main-inverse hover:text-[#7B7B7B] px-4 py-2 rounded-full md:absolute md:right-0"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full md:absolute md:right-0"
                   style={{ whiteSpace: "nowrap" }}
                 >
                   {projects[selected].date}
