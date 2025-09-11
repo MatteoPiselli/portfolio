@@ -75,8 +75,6 @@ const projects = [
     details: [
       "Application web mettant en avant mes compétences, projets et expériences professionnelles.",
       "- Interface moderne, responsive et animée en Next.js et Tailwind CSS.",
-      "- Animations avec Framer motion.",
-      "- Bibliothèque JavaScript particles.js.",
     ],
     stacks: ["Next.js", "Tailwind CSS"],
     date: "2025",
