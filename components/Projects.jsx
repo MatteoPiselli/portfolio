@@ -36,7 +36,7 @@ const projects = [
       "- Interface développée en React Native / Expo, intégration de Google Maps.",
       "- Authentification sécurisée avec JWT, API REST en Express.js.",
       "- Stockage des signalements et des données utilisateurs dans MongoDB.",
-      "- Travail en équipe avec répartition des rôles, communication continue et usage de Git.",
+      "- Projet mené en méthodologie Agile, travail en équipe avec répartition claire des rôles, une communication continue, et l’utilisation de Git pour la gestion de version.",
     ],
     developpeurs: [
       {
