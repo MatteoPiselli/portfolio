@@ -1,5 +1,4 @@
 // Next
-import Head from "next/head";
 import Image from "next/image";
 // Components
 import ParticlesBackground from "./Particles";
@@ -17,14 +16,6 @@ import ThemeToggle from "./ThemeToggle";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Matteo PISELLI - Portfolio</title>
-        <meta
-          name="description"
-          content="Bienvenue sur mon portfolio ! Vous y découvrirez de nombreuses informations telles que mon parcours, mes projets et mes expériences."
-        />
-      </Head>
-
       {/* ------------Background----------- */}
       <div className="relative bg-gradient-to-b min-h-screen w-full ">
         {/* --------- Navigation ---------- */}
