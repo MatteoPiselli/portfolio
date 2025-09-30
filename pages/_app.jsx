@@ -1,11 +1,20 @@
-import '../styles/globals.css';
-import Head from 'next/head';
+import "../styles/globals.css";
+import Head from "next/head";
 
 function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Next.js App</title>
+        <title>Matteo PISELLI - Portfolio</title>
+        <meta
+          name="description"
+          content="Bienvenue sur mon portfolio ! Vous y découvrirez mon parcours, mes projets et mes expériences en développement web et mobile."
+        />
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://portfolio-matteo-pisellis-projects.vercel.app/"
+        />
       </Head>
       <Component {...pageProps} />
     </>
