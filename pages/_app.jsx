@@ -11,10 +11,7 @@ function App({ Component, pageProps }) {
           content="Bienvenue sur mon portfolio ! Vous y découvrirez mon parcours, mes projets et mes expériences en développement web et mobile."
         />
         <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://portfolio-matteo-pisellis-projects.vercel.app/"
-        />
+        <link rel="canonical" href="https://matteopiselli.dev" />
       </Head>
       <Component {...pageProps} />
     </>
