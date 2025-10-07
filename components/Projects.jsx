@@ -21,6 +21,7 @@ const projects = [
       "Tailwind CSS",
       "Node.js",
       "Express.js",
+      "MongoDB",
       "API Riot Games",
     ],
     date: "2025",
@@ -71,7 +72,7 @@ const projects = [
     image_light: "/projets/portfolio-v2-white.png",
     image_dark: "/projets/portfolio-v2-black.png",
     repo: "https://github.com/MatteoPiselli/portfolio",
-    url: "https://portfolio-matteo-pisellis-projects.vercel.app/",
+    url: "https://matteopiselli.dev",
     details: [
       "Application web mettant en avant mes compétences, projets et expériences professionnelles.",
       "- Interface moderne, responsive et animée en Next.js et Tailwind CSS.",
