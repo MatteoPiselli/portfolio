@@ -8,7 +8,7 @@ function App({ Component, pageProps }) {
         <title>Matteo PISELLI - Portfolio</title>
         <meta
           name="description"
-          content="Bienvenue sur mon portfolio ! Vous y découvrirez mon parcours, mes projets et mes expériences en développement web et mobile."
+          content="Bienvenue sur mon portfolio ! Vous y découvrirez mes projets et mes expériences en développement web et mobile."
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://matteopiselli.dev" />
