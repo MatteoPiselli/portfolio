@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Informations de contact */}
         <div className="mb-4 md:mb-0">
           <h2 className="text-xl font-semibold">Matteo PISELLI</h2>
-          <p>Développeur Full-Stack Web & Mobile</p>
+          <p>Développeur Full Stack Web & Mobile</p>
           <p>
             Email:{" "}
             <a
