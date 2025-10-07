@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const experiencesData = {
-  "Développement 💻": [
+  "Développeur 💻": [
     {
       title: "Développeur Web Stagiaire",
       company: "Partenaires Particuliers",
