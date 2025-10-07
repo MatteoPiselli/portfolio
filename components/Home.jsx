@@ -52,7 +52,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-main">
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-2xl md:text-3xl font-bold mb-8">
-                Développeur Full-Stack web et mobile 💻 📱
+                Développeur Full Stack web et mobile 💻 📱
               </h1>
               <div className="text-lg font-light space-y-4">
                 <p>👋🏻 Salut, moi c’est Matteo PISELLI.</p>
