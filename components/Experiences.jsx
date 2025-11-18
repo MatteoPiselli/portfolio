@@ -6,7 +6,7 @@ const experiencesData = {
       title: "Développeur Web Stagiaire",
       company: "Partenaires Particuliers",
       logo: "/experiences/partenaires-particuliers.png",
-      period: "2023",
+      period: "Février - Mars 2023",
       tasks: [
         "Refonte complète du site vitrine de l’entreprise.",
         "Intégration responsive pour tous formats d’écran.",
@@ -19,7 +19,7 @@ const experiencesData = {
       title: "Développeur Web Stagiaire",
       company: "Transgourmet France",
       logo: "/experiences/transgourmet.png",
-      period: "2022",
+      period: "Juin - Juillet 2022",
       tasks: [
         "Découverte de JavaScript, manipulation du DOM.",
         "Formation via OpenClassrooms + premiers scripts dynamiques.",
