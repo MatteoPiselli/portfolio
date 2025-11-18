@@ -73,9 +73,10 @@ export default function Home() {
                   .
                 </p>
                 <p>
-                  🎯 Rigoureux, autonome et passionné, je cherche une alternance
-                  pour continuer à progresser sur des projets concrets, tout en
-                  apportant mes compétences à une équipe dynamique.
+                  🎯 Rigoureux, autonome et passionné, je cherche un
+                  CDI/Alternance pour continuer à progresser sur des projets
+                  concrets, tout en apportant mes compétences à une équipe
+                  dynamique.
                 </p>
               </div>
             </div>
