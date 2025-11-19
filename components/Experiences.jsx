@@ -46,11 +46,11 @@ export default function Experiences() {
                 {category}
               </h2>
 
-              <div className="space-y-8">
+              <div className="space-y-8 md:space-y-0 md:flex md:gap-4">
                 {experiences.map((exp, index) => (
                   <div
                     key={index}
-                    className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+                    className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow md:w-1/2"
                   >
                     {/* En-tête de l'expérience */}
                     <div className="flex items-center justify-between mb-6">
