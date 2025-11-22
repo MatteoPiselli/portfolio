@@ -244,21 +244,20 @@ export default function Projects() {
               {projects[selected].title}
             </h3>
 
-            <Image
-              src={
-                projects[selected].title === "Portfolio v2"
-                  ? theme === "dark"
-                    ? projects[selected].image_dark
-                    : projects[selected].image_light
-                  : projects[selected].image
-              }
-              alt={projects[selected].title}
-              width={700}
-              height={350}
-              className="object-cover bg-main-inverse rounded-lg"
-            />
-
             <div className="relative">
+              <Image
+                src={
+                  projects[selected].title === "Portfolio v2"
+                    ? theme === "dark"
+                      ? projects[selected].image_dark
+                      : projects[selected].image_light
+                    : projects[selected].image
+                }
+                alt={projects[selected].title}
+                width={700}
+                height={350}
+                className="object-cover bg-main-inverse rounded-lg"
+              />
               {projects[selected].title === "SummonerFinder.gg" && (
                 <div className="absolute inset-0 bg-black bg-opacity-75 rounded-lg flex items-center justify-center p-6">
                   <div className="text-center">
