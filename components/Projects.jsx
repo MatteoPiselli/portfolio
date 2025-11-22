@@ -8,7 +8,7 @@ const projects = [
     image: "/projets/summoner-finder.png",
     repo_front: "https://github.com/MatteoPiselli/leagueoflegends-api-frontend",
     repo_back: "https://github.com/MatteoPiselli/leagueoflegends-api-backend",
-    url: null,
+    url: "https://leagueoflegends-api-frontend.vercel.app/",
     details: [
       "Application web permettant de rechercher des profils de joueurs League of Legends.",
       "- Recherche par username et tagline avec affichage dynamique des statistiques de jeu.",
