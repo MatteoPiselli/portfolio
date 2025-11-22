@@ -110,7 +110,7 @@ export default function Experiences() {
                         rel="noopener noreferrer"
                         className="flex items-center italic hover:opacity-70 hover:scale-105 transition-all duration-200 text-blue-500 hover:text-blue-600"
                       >
-                        Voir le site web →
+                        Voir le site web ←
                       </a>
                     </div>
                   </div>
