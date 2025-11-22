@@ -12,7 +12,7 @@ const projects = [
     details: [
       "Application web permettant de rechercher des profils de joueurs League of Legends.",
       "- Recherche par username et tagline avec affichage dynamique des statistiques de jeu.",
-      "- Développement d’une API REST en Node.js/Express.js pour interagir avec l’API de Riot Games et mise en cache MongoDB.",
+      "- Développement d’une API REST en Node.js/Express pour interagir avec l’API de Riot Games et mise en cache MongoDB.",
       "- Création de l'interface utilisateur en Next.js, Tailwind CSS, React Context et hooks personnalisés pour la gestion des données.",
     ],
     stacks: [
@@ -257,6 +257,22 @@ export default function Projects() {
               height={350}
               className="object-cover bg-main-inverse rounded-lg"
             />
+
+            <div className="relative">
+              {projects[selected].title === "SummonerFinder.gg" && (
+                <div className="absolute inset-0 bg-black bg-opacity-75 rounded-lg flex items-center justify-center p-6">
+                  <div className="text-center">
+                    <p className="text-white text-base md:text-lg font-semibold mb-2">
+                      ⚠️ Site pas encore responsive ⚠️
+                    </p>
+                    <p className="text-gray-300 text-sm md:text-base">
+                      Pour une expérience optimale, veuillez consulter ce site
+                      sur ordinateur.
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* ----------- Description du projet scrollable---------------*/}
 
