@@ -228,23 +228,23 @@ export default function Projects() {
 
       {/* Pop-up modal */}
       {selected !== null && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-          <div className="relative bg-card rounded-2xl shadow-2xl p-8 max-w-lg w-[90vw] max-h-[90vh] animate-fade-in overflow-y-auto scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4">
+          <div className="relative bg-card rounded-2xl shadow-2xl p-4 md:p-8 max-w-lg w-full max-h-[95vh] md:max-h-[90vh] animate-fade-in overflow-y-auto scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin">
             {/* Bouton de fermeture */}
             <button
-              className="absolute top-4 right-4 text-secondary text-secondary:hover"
+              className="absolute top-3 right-3 md:top-4 md:right-4 text-secondary hover:text-main transition z-10"
               onClick={() => setSelected(null)}
               aria-label="Fermer"
             >
-              <FaTimes size={22} />
+              <FaTimes size={20} />
             </button>
 
             {/* -------- Titre + Image du projet ---------*/}
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 pr-8">
               {projects[selected].title}
             </h3>
 
-            <div className="relative">
+            <div className="relative overflow-hidden rounded-lg leading-[0]">
               <Image
                 src={
                   projects[selected].title === "Portfolio v2"
@@ -256,15 +256,15 @@ export default function Projects() {
                 alt={projects[selected].title}
                 width={700}
                 height={350}
-                className="object-cover bg-main-inverse rounded-lg"
+                className="object-cover bg-main-inverse w-full"
               />
               {projects[selected].title === "SummonerFinder.gg" && (
-                <div className="absolute inset-0 bg-black bg-opacity-75 rounded-lg flex items-center justify-center p-6">
-                  <div className="text-center">
-                    <p className="text-white text-base md:text-lg font-semibold mb-2">
-                      ⚠️ Site pas encore responsive ⚠️
+                <div className="absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center p-2 md:p-4">
+                  <div className="text-center px-2 md:px-4">
+                    <p className="text-white text-sm md:text-base font-semibold mb-1 md:mb-2">
+                      ⚠️ Site non responsive ⚠️
                     </p>
-                    <p className="text-gray-300 text-sm md:text-base">
+                    <p className="text-gray-300 text-xs md:text-base">
                       Pour une expérience optimale, veuillez consulter ce site
                       sur ordinateur.
                     </p>
@@ -277,7 +277,7 @@ export default function Projects() {
 
             {/* ------ Developpeurs ------*/}
             {projects[selected].developpeurs && (
-              <div className="mt-2">
+              <div className="mt-3 md:mt-4 text-sm md:text-base">
                 <u>Développeurs</u> :
                 {projects[selected].developpeurs.map((dev) => (
                   <a
@@ -285,7 +285,7 @@ export default function Projects() {
                     href={dev.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#0A66C2] hover:underline font-medium m-2 gap-1"
+                    className="text-[#0A66C2] hover:underline font-medium m-1 md:m-2"
                   >
                     {dev.name}
                   </a>
@@ -294,25 +294,25 @@ export default function Projects() {
             )}
 
             {/* ------ Paragraphe ------*/}
-            <div className="mt-4 mb-4 overflow-y-auto max-h-[40vh] scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin pr-2">
+            <div className="mt-3 md:mt-4 mb-3 md:mb-4 overflow-y-auto max-h-[35vh] md:max-h-[40vh] scrollbar scrollbar-thumb-gray-600 scrollbar-track-transparent scrollbar-thin pr-2 text-sm md:text-base">
               {projects[selected].details.map((paragraph, index) => (
-                <p key={index} className="mt-4 mb-4 ">
+                <p key={index} className="mt-2 md:mt-4 mb-2 md:mb-4">
                   {paragraph}
                 </p>
               ))}
             </div>
 
             {/* Container parent en relative pour la date en md:absolute */}
-            <div className="relative flex flex-wrap gap-4 items-center">
+            <div className="relative flex flex-wrap gap-2 md:gap-4 items-center text-sm md:text-base">
               {/* Liens */}
               {projects[selected].repo_front && (
                 <a
                   href={projects[selected].repo_front}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] transition px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] transition px-3 py-1.5 md:px-4 md:py-2 rounded-full"
                 >
-                  <FaGithub /> Front
+                  <FaGithub size={18} /> Front
                 </a>
               )}
               {projects[selected].repo_back && (
@@ -320,9 +320,9 @@ export default function Projects() {
                   href={projects[selected].repo_back}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] transition px-3 py-1.5 md:px-4 md:py-2 rounded-full"
                 >
-                  <FaGithub /> Back
+                  <FaGithub size={18} /> Back
                 </a>
               )}
               {projects[selected].repo && (
@@ -330,9 +330,9 @@ export default function Projects() {
                   href={projects[selected].repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] transition px-3 py-1.5 md:px-4 md:py-2 rounded-full"
                 >
-                  <FaGithub /> Code
+                  <FaGithub size={18} /> Code
                 </a>
               )}
               {projects[selected].url && (
@@ -340,14 +340,14 @@ export default function Projects() {
                   href={projects[selected].url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] transition px-3 py-1.5 md:px-4 md:py-2 rounded-full"
                 >
-                  <FaGlobe /> Site
+                  <FaGlobe size={18} /> Site
                 </a>
               )}
               {projects[selected].date && (
                 <div
-                  className="flex items-center gap-2 bg-badge hover:text-[#7B7B7B] px-4 py-2 rounded-full md:absolute md:right-0"
+                  className="flex items-center gap-2 bg-badge px-3 py-1.5 md:px-4 md:py-2 rounded-full md:absolute md:right-0"
                   style={{ whiteSpace: "nowrap" }}
                 >
                   {projects[selected].date}
