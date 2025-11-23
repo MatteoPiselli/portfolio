@@ -90,7 +90,7 @@ export default function Experiences() {
                     </div>
 
                     {/* Stack technique */}
-                    <div className="mb-6">
+                    <div className="text-sm md:text-md mb-6">
                       <p className="font-semibold">
                         <span className="underline">Stack technique</span> :{" "}
                         {exp.stack}
