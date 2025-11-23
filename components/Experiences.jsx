@@ -35,7 +35,10 @@ export default function Experiences() {
   return (
     <div className="relative w-full min-h-screen bg-color text-main">
       <div className="relative z-10 max-w-7xl mx-auto pt-24 px-4">
-        <h2 id="experiences" className="text-4xl font-bold text-center mb-12">
+        <h2
+          id="experiences"
+          className="text-3xl md:text-4xl font-bold text-center mb-12"
+        >
           Expériences Professionnelles
         </h2>
 

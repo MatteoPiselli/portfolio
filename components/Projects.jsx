@@ -124,7 +124,7 @@ export default function Projects() {
       className="relative w-full min-h-screen bg-color text-main py-16 px-4"
     >
       <div className="flex flex-col items-center mb-12">
-        <h2 className="font-bold text-2xl md:text-4xl mb-8">Projets</h2>
+        <h2 className="font-bold text-3xl md:text-4xl mb-8">Projets</h2>
         <p className="text-lg text-center text-secondary">
           Des projets réalisés pour mettre en pratique mes compétences.
         </p>

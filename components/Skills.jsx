@@ -56,7 +56,7 @@ export default function Skills() {
       className="flex items-center justify-center w-full min-h-screen bg-color"
     >
       <div className="relative z-10 inset-0 flex flex-col justify-center items-center text-main">
-        <h2 className="text-2xl md:text-4xl font-bold mb-8">Stack Technique</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8">Stack Technique</h2>
         <p className="text-lg text-center text-secondary">
           La stack technique avec laquelle je crée mes applications web & mobile
         </p>
