@@ -31,7 +31,7 @@ const projects = [
     image: "/projets/unimap.png",
     repo_front: "https://github.com/Myl-W/Unimap-frontend",
     repo_back: "https://github.com/Myl-W/Unimap-backend",
-    url: null,
+    url: "https://res.cloudinary.com/da72rixci/video/upload/f_auto,q_auto/v1764863596/unimap_sggjak.mp4",
     details: [
       "Application mobile collaborative dédiée à l’accessibilité des lieux publics.",
       "- Interface développée en React Native/Expo, intégration de Google Maps.",
