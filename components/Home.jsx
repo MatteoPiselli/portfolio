@@ -51,7 +51,7 @@ export default function Home() {
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-main">
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-2xl md:text-3xl font-bold mb-8">
+              <h1 className="text-2xl md:text-3xl font-bold mt-8 md:mt-0 mb-8">
                 Développeur Full Stack web et mobile 💻 📱
               </h1>
               <div className="text-lg font-light space-y-4">
@@ -73,10 +73,12 @@ export default function Home() {
                   .
                 </p>
                 <p>
-                  🎯 Rigoureux, autonome et passionné, je cherche un
-                  CDI/Alternance pour continuer à progresser sur des projets
-                  concrets, tout en apportant mes compétences à une équipe
-                  dynamique.
+                  🎯 Aujourd'hui, je recherche un CDI/Alternance pour m'investir
+                  pleinement dans des projets ambitieux au sein d'une équipe.
+                </p>
+                <p>
+                  🚀 À côté, j’exerce également en freelance, ce qui me permet
+                  de renforcer mes compétences et de rester polyvalent.
                 </p>
               </div>
             </div>
