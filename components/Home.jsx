@@ -53,7 +53,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-main">
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-2xl md:text-3xl font-bold mt-16 md:mt-0 mb-4">
-                Développeur Full Stack{" "}
+                Développeur Full Stack <br className="md:hidden" />
                 <span style={{ color: "#00ED64" }}>M</span>
                 <span style={{ color: "#444" }}>E</span>
                 <span style={{ color: "#61DAFB" }}>R</span>
