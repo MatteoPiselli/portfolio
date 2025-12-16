@@ -11,6 +11,7 @@ import ScrollToTop from "./ScrollToTop";
 import Footer from "./Footer";
 // Icons
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Home() {
@@ -51,45 +52,93 @@ export default function Home() {
         <div className="absolute z-10 inset-0 flex items-center justify-center px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full text-main">
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-2xl md:text-3xl font-bold mt-8 md:mt-0 mb-8">
-                Développeur Full Stack web et mobile 💻 📱
+              <h1 className="text-2xl md:text-3xl font-bold mt-16 md:mt-0 mb-4">
+                Développeur Full Stack{" "}
+                <span style={{ color: "#00ED64" }}>M</span>
+                <span style={{ color: "#444" }}>E</span>
+                <span style={{ color: "#61DAFB" }}>R</span>
+                <span style={{ color: "#339933" }}>N</span> 💻 📱
               </h1>
-              <div className="text-lg font-light space-y-4">
-                <p>👋🏻 Salut, moi c’est Matteo PISELLI.</p>
-                <p>
-                  👨🏻‍💻 Je conçois des applications modernes et performantes en
-                  <br />
-                  <span className="inline-flex items-center gap-1 bg-blue-400 text-main px-2 py-1 rounded-md text-sm font-medium">
-                    React
+              <div className="text-lg font-thin space-y-4">
+                <p className="italic">
+                  Je crée des applications web et mobiles avec{" "}
+                  <span className="font-bold" style={{ color: "#00ED64" }}>
+                    M
                   </span>
-                  ,{" "}
-                  <span className="inline-flex items-center gap-1 bg-green-600 text-main px-2 py-1 rounded-md text-sm font-medium">
-                    Node.js
-                  </span>{" "}
-                  et{" "}
-                  <span className="inline-flex items-center gap-1 bg-green-500 text-main px-2 py-1 rounded-md text-sm font-medium">
-                    MongoDB
+                  ongoDB,{" "}
+                  <span className="font-bold" style={{ color: "#444" }}>
+                    E
                   </span>
-                  .
+                  xpress.js,{" "}
+                  <span className="font-bold" style={{ color: "#61DAFB" }}>
+                    R
+                  </span>
+                  eact et{" "}
+                  <span className="font-bold" style={{ color: "#339933" }}>
+                    N
+                  </span>
+                  ode.js.
                 </p>
                 <p>
-                  🎯 Aujourd'hui, je recherche un CDI/Alternance pour m'investir
-                  pleinement dans des projets ambitieux au sein d'une équipe.
+                  Spécialisé dans la stack{" "}
+                  <span className="font-bold">MERN</span>, je développe des
+                  applications performantes, modernes et évolutives.
                 </p>
                 <p>
-                  🚀 À côté, j’exerce également en freelance, ce qui me permet
-                  de renforcer mes compétences et de rester polyvalent.
+                  Que ce soit pour un <span className="font-bold">MVP</span>,
+                  une application <span className="font-bold">SaaS</span> ou une
+                  solution <span className="font-bold">sur mesure</span>, je
+                  m'attache à livrer du code propre, maintenable et scalable.
                 </p>
               </div>
             </div>
             {/* -----------Picture---------- */}
-            <div className="w-[200px] h-[200px] rounded-full overflow-hidden relative shadow-lg">
-              <Image
-                src="/portrait.jpg"
-                alt="photo-portrait"
-                layout="fill"
-                className="object-cover"
-              />
+            <div className="relative w-[280px] h-[280px] flex items-center justify-center">
+              {/* Orbiting icons */}
+              <div className="absolute inset-0 animate-spin-slow">
+                {/* MongoDB - Top */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <div className="animate-spin-reverse">
+                    <SiMongodb
+                      className="text-4xl"
+                      style={{ color: "#00ED64" }}
+                    />
+                  </div>
+                </div>
+                {/* Express - Right */}
+                <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2">
+                  <div className="animate-spin-reverse">
+                    <SiExpress className="text-4xl" style={{ color: "#444" }} />
+                  </div>
+                </div>
+                {/* React - Bottom */}
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                  <div className="animate-spin-reverse">
+                    <SiReact
+                      className="text-4xl"
+                      style={{ color: "#61DAFB" }}
+                    />
+                  </div>
+                </div>
+                {/* Node.js - Left */}
+                <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2">
+                  <div className="animate-spin-reverse">
+                    <SiNodedotjs
+                      className="text-4xl"
+                      style={{ color: "#339933" }}
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* Profile picture */}
+              <div className="w-[200px] h-[200px] rounded-full overflow-hidden relative shadow-lg z-10">
+                <Image
+                  src="/portrait.jpg"
+                  alt="photo-portrait"
+                  layout="fill"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
