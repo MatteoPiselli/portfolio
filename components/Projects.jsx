@@ -60,6 +60,7 @@ const projects = [
     stacks: [
       "React Native",
       "Expo",
+      "Redux",
       "Node.js",
       "Express.js",
       "MongoDB",
