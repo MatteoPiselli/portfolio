@@ -36,7 +36,7 @@ const projects = [
       "Application mobile collaborative dédiée à l’accessibilité des lieux publics.",
       "- Interface développée en React Native/Expo, intégration de Google Maps.",
       "- Authentification sécurisée avec JWT, API REST en Node.js/Express.js.",
-      "- Stockage des signalements et des données utilisateurs dans MongoDB.",
+      "- Stockage des données dans Redux et MongoDB.",
       "- Projet mené en méthodologie Agile, travail en équipe avec répartition claire des rôles, une communication continue, et l’utilisation de Git pour la gestion de version.",
     ],
     developpeurs: [
